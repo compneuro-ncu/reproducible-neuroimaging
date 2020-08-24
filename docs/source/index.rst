@@ -11,15 +11,16 @@ Welcome to reproducible-neuroimaging's documentation!
    :caption: Contents:
 
 
+.. include:: ../README.rst
+.. include:: introduction.rst
+.. include:: preregistration.rst
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+Contents
+--------
 
-Preregistration
-==================
+.. toctree::
+   :maxdepth: 3
 
-Text
+   introduction
+   preregistration
