@@ -11,11 +11,6 @@ Welcome to reproducible-neuroimaging's documentation!
    :caption: Contents:
 
 
-.. include:: ../README.rst
-.. include:: introduction.rst
-.. include:: preregistration.rst
-
-
 Contents
 --------
 
@@ -24,3 +19,8 @@ Contents
 
    introduction
    preregistration
+
+
+.. include:: ../README.rst
+.. include:: introduction.rst
+.. include:: preregistration.rst

@@ -13,7 +13,7 @@ Preregistration
 
 ==================
 
--------------------------
+
 Types of preregistration
 -------------------------
 
@@ -29,7 +29,7 @@ In *reviewed registration report* researcher submits a detailed proposal for a s
 
 In *registered replication reports* researchers direct replication of one or more original findings. Many labs follow the same preregistered plan, and the results from all of those independent studies are published collectively regardless of the outcomes of individual studies. 
 
-------------------------------
+
 How to make a preregistration? 
 ------------------------------
 
@@ -39,7 +39,7 @@ Follow a template from Open Science Framework at `Word <https://osf.io/jea94/>`_
    :align: center
    :alt: Alternative text
 
--------------------------
+
 Rules of preregistration
 -------------------------
 
@@ -49,7 +49,7 @@ Rules of preregistration
 
 3. **ANY unregistered analyses must be transparently reported as exploratory finding** Do not stop yourself before make transparent changes to analysis plan but remember to report the change and its justification (it have to be reported somehow as intuitive suggestions).
 
-------------------------------------------
+
 Why all researchers should preregistrate?
 ------------------------------------------
 
