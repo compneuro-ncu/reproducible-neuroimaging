@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html4" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -26,10 +26,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -157,7 +157,14 @@
 <h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#reproducibility-in-science">Reproducibility in science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#reproducibility-crisis">Reproducibility crisis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#reasons-of-reproducibility-crisis">Reasons of reproducibility crisis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#motivations-for-reproducible-research">Motivations for reproducible research</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#three-steps-to-more-reproducible-research">Three steps to more reproducible research</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="preregistration.html">Preregistration</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="preregistration.html#types-of-preregistration">Types of preregistration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="preregistration.html#how-to-make-a-preregistration">How to make a preregistration?</a></li>
@@ -169,7 +176,56 @@
 </div>
 <div class="section" id="introduction">
 <h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h3>
+<p>The progress of science is based on valuable research.
+While reading the research paper you naturally trust the researchers that the presented results are true and that you can build your research upon them.
+Recent reports show, however, that scientists are not able to reproduce a large amount of published research.
+In this section we introduce you to the concept of reproducibility in research, reasons of reproducibility crisis, and motivations to lead reproducible research.
+Finally, we present you three steps that might improve reproducibility in your research.</p>
 </div>
+</div>
+<div class="section" id="reproducibility-in-science">
+<h2>Reproducibility in science<a class="headerlink" href="#reproducibility-in-science" title="Permalink to this headline">¶</a></h2>
+<p>The goal of scientific research is to build reliable knowledge.
+To approach this, scientists should be able to repeat the analysis and replicate findings of other researchers.
+The individual research should be transparent and well documented so it can be verified by other scientists.</p>
+<p><strong>Reproducibility</strong> stands for “obtaining consistent results using the same input data, computational steps, methods, and code, and conditions of analysis”.
+It is also important to distinguish the reproducibility from <strong>replicability</strong> that stands for “obtaining consistent results across studies aimed at answering the same scientific question, each of which has obtained its own data” [NAS, 2018].</p>
+<p>By increasing reproducibility of your research, you also increase its replicability.</p>
+</div>
+<div class="section" id="reproducibility-crisis">
+<h2>Reproducibility crisis<a class="headerlink" href="#reproducibility-crisis" title="Permalink to this headline">¶</a></h2>
+<p>Intuitively, the published research results should be reliable and trustworthy.
+Recent alarming reports showed that it is difficult to reproduce or replicate results in various medical, life and behavioural sciences (Open Science Collaboration, OSC 2015). According to Stanford Encyclopedia of Philosophy, evidence suggesting that we face reproducibility crisis include:</p>
+<ul class="simple">
+<li>absence of replication studies in the published literature in many scientific fields (e.g., Makel, Plucker, &amp; Hegarty 2012),</li>
+<li>failure to reproduce results of published studies in large systematic replication projects (e.g., OSC 2015; Begley &amp; Ellis 2012),</li>
+<li>evidence of publication bias (Fanelli 2010a),</li>
+<li>a high prevalence of “questionable research practices”, which inflate the rate of false positives in the literature (Simmons, Nelson, &amp; Simonsohn 2011; John, Loewenstein, &amp; Prelec 2012; Agnoli et al. 2017; Fraser et al. 2018), and</li>
+<li>the documented lack of transparency and completeness in the reporting of methods, data and analysis in scientific publication (Bakker &amp; Wicherts 2011; Nuijten et al. 2016).</li>
+</ul>
+</div>
+<div class="section" id="reasons-of-reproducibility-crisis">
+<h2>Reasons of reproducibility crisis<a class="headerlink" href="#reasons-of-reproducibility-crisis" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="motivations-for-reproducible-research">
+<h2>Motivations for reproducible research<a class="headerlink" href="#motivations-for-reproducible-research" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="three-steps-to-more-reproducible-research">
+<h2>Three steps to more reproducible research<a class="headerlink" href="#three-steps-to-more-reproducible-research" title="Permalink to this headline">¶</a></h2>
+<p>The goal of this handbook is to guide you through essential research practices that will increase reproducibility in your neuroimaging research.
+For simplicity, we divided this material into 3 steps: (1) share your research plan, (2) share your data, and (3) share your code.</p>
+<ul class="simple">
+<li><strong>Step 1: Share your research plan</strong></li>
+</ul>
+<p>Here we guide you on what you should know before starting collecting your data and/or performing a new data analysis. We introduce you to concepts of pre-registration and pre-registered reports.</p>
+<ul class="simple">
+<li><strong>Step 2: Share your data</strong></li>
+</ul>
+<p>Here we help you to set up your data management plan, structure and name your project files, and share your data in open repositories.. We introduce you to Brain Imaging Data Structure (BIDS) formatting and controlling versions of your data with DataLad.</p>
+<ul class="simple">
+<li><strong>Step 3: Share your code</strong></li>
+</ul>
+<p>Here we explain how to create a reproducible data analysis workflow. We introduce you to concepts of version control (Git/GitHub), containers (Docker), and good practices for coding and documenting your analysis.</p>
 <div class="section" id="preregistration">
 <h3>Preregistration<a class="headerlink" href="#preregistration" title="Permalink to this headline">¶</a></h3>
 <p><strong>Preregistration</strong> is the practice of registering research plan before they are conducted. The preregistered report format requires reseachers to submit a description of the confirmatory hypotheses, variables, study methods and analysis plan prior to data collection. This practice allows researchers to circumvent the publication bias toward significant findings and prevent the data from taking you hostage. Preregistration makes the distinction between hypothesis testing and exploratory (hypothesis generating) research more clear. Data set won’t affect hypothesis and vice versa.</p>
@@ -180,15 +236,15 @@
 <div class="section" id="types-of-preregistration">
 <h2>Types of preregistration<a class="headerlink" href="#types-of-preregistration" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li><p>Unreviewed</p></li>
+<li>Unreviewed</li>
 </ol>
 <p><em>Unreviewed registration report</em> contains detailed description of researcher’s plans for a study as possible, and researcher saves those plans in a time-stamped, uneditable archive; can be shared with reviewers, editors, and other researchers.</p>
 <ol class="arabic simple" start="2">
-<li><p>Reviewed</p></li>
+<li>Reviewed</li>
 </ol>
 <p>In <em>reviewed registration report</em> researcher submits a detailed proposal for a study to a journal before conducting the study (these registered reports have the same virtues as preregistration, but they also address the problem of publication bias because the studies are published regardless of their outcomes!); proposed study will be informative regardless of its outcome.</p>
 <ol class="arabic simple" start="3">
-<li><p>RRR - Registered Replication Reports</p></li>
+<li>RRR - Registered Replication Reports</li>
 </ol>
 <p>In <em>registered replication reports</em> researchers direct replication of one or more original findings. Many labs follow the same preregistered plan, and the results from all of those independent studies are published collectively regardless of the outcomes of individual studies.</p>
 </div>
@@ -200,9 +256,9 @@
 <div class="section" id="rules-of-preregistration">
 <h2>Rules of preregistration<a class="headerlink" href="#rules-of-preregistration" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li><p>Once registered, your preregistration will have a short URL for citation. <strong>Remember to include a link to your registration report</strong>.</p></li>
-<li><p><strong>Report the results of ALL preregistered analyses regardless of outcome</strong>.</p></li>
-<li><p><strong>ANY unregistered analyses must be transparently reported as exploratory finding</strong> Do not stop yourself before make transparent changes to analysis plan but remember to report the change and its justification (it have to be reported somehow as intuitive suggestions).</p></li>
+<li>Once registered, your preregistration will have a short URL for citation. <strong>Remember to include a link to your registration report</strong>.</li>
+<li><strong>Report the results of ALL preregistered analyses regardless of outcome</strong>.</li>
+<li><strong>ANY unregistered analyses must be transparently reported as exploratory finding</strong> Do not stop yourself before make transparent changes to analysis plan but remember to report the change and its justification (it have to be reported somehow as intuitive suggestions).</li>
 </ol>
 </div>
 <div class="section" id="why-all-researchers-should-preregistrate">

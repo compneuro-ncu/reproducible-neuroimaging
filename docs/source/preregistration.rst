@@ -2,10 +2,10 @@
    sphinx-quickstart on Tue Aug  4 15:25:55 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
-   
-----------------
+
+********************
 Preregistration
-----------------
+********************
 
 **Preregistration** is the practice of registering research plan before they are conducted. The preregistered report format requires reseachers to submit a description of the confirmatory hypotheses, variables, study methods and analysis plan prior to data collection. This practice allows researchers to circumvent the publication bias toward significant findings and prevent the data from taking you hostage. Preregistration makes the distinction between hypothesis testing and exploratory (hypothesis generating) research more clear. Data set won’t affect hypothesis and vice versa. 
 
