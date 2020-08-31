@@ -17,8 +17,15 @@ The individual research should be transparent and well documented so it can be v
 
 **Reproducibility** stands for “obtaining consistent results using the same input data, computational steps, methods, and code, and conditions of analysis”.
 It is also important to distinguish the reproducibility from **replicability** that stands for “obtaining consistent results across studies aimed at answering the same scientific question, each of which has obtained its own data” [NAS, 2018].
+In contrast, the term **robustness** of research means that you can obtain consistent results using the same data but different analyses
+Finally,  **generalizability** of research means that you can obtain consistent results using different data and analysis.
 
-By increasing reproducibility of your research, you also increase its replicability.
+
+.. image:: img/39-reproducible-replicable-robust-generalisable.jpg
+   :align: center
+   :alt: Alternative text
+
+This image was created by Scriberia for The Turing Way community and is used under a CC-BY licence. The image was obtained from https://zenodo.org/record/3332808.
 
 
 Reproducibility crisis
@@ -38,8 +45,20 @@ Recent alarming reports showed that it is difficult to reproduce or replicate re
 
 - the documented lack of transparency and completeness in the reporting of methods, data and analysis in scientific publication (Bakker & Wicherts 2011; Nuijten et al. 2016).
 
+.. image:: img/5-signs-of-reproducibility-crisis.png
+   :align: center
+   :width: 500
+   :alt: Alternative text
+
+
 Reasons of reproducibility crisis
 -------------------------------------
+
+.. image:: img/levels-of-research-project.png
+   :align: center
+   :alt: Alternative text
+
+
 
 Motivations for reproducible research
 ---------------------------------------
@@ -59,5 +78,5 @@ Here we guide you on what you should know before starting collecting your data a
 Here we help you to set up your data management plan, structure and name your project files, and share your data in open repositories.. We introduce you to Brain Imaging Data Structure (BIDS) formatting and controlling versions of your data with DataLad.
 
 - **Step 3: Share your code**
-git 
+
 Here we explain how to create a reproducible data analysis workflow. We introduce you to concepts of version control (Git/GitHub), containers (Docker), and good practices for coding and documenting your analysis.
