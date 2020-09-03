@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Welcome to reproducible-neuroimaging’s documentation! &mdash; reproducible-neuroimaging 0.0.1 documentation</title>
+  <title>Guide to reproducible neuroimaging &mdash; reproducible-neuroimaging 0.0.1 documentation</title>
   
 
   
@@ -130,7 +130,7 @@
     
       <li><a href="#" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Welcome to reproducible-neuroimaging’s documentation!</li>
+      <li>Guide to reproducible neuroimaging</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -149,15 +149,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="welcome-to-reproducible-neuroimaging-s-documentation">
-<h1>Welcome to reproducible-neuroimaging’s documentation!<a class="headerlink" href="#welcome-to-reproducible-neuroimaging-s-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="guide-to-reproducible-neuroimaging">
+<h1>Guide to reproducible neuroimaging<a class="headerlink" href="#guide-to-reproducible-neuroimaging" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <div class="section" id="contents">
 <h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#reproducibility-in-science">Reproducibility in science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#reproducibility-crisis">Reproducibility crisis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#reasons-of-reproducibility-crisis">Reasons of reproducibility crisis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#motivations-for-reproducible-research">Motivations for reproducible research</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#three-steps-to-more-reproducible-research">Three steps to more reproducible research</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="preregistration.html">Preregistration</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="preregistration.html#types-of-preregistration">Types of preregistration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="preregistration.html#how-to-make-a-preregistration">How to make a preregistration?</a></li>
@@ -169,7 +176,61 @@
 </div>
 <div class="section" id="introduction">
 <h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h3>
+<p>The progress of science is based on valuable research.
+While reading the research paper you naturally trust the researchers that the presented results are true and that you can build your research upon them.
+Recent reports show, however, that scientists are not able to reproduce a large amount of published research.
+In this section we introduce you to the concept of reproducibility in research, reasons of reproducibility crisis, and motivations to lead reproducible research.
+Finally, we present you three steps that might improve reproducibility in your research.</p>
 </div>
+</div>
+<div class="section" id="reproducibility-in-science">
+<h2>Reproducibility in science<a class="headerlink" href="#reproducibility-in-science" title="Permalink to this headline">¶</a></h2>
+<p>The goal of scientific research is to build reliable knowledge.
+To approach this, scientists should be able to repeat the analysis and replicate findings of other researchers.
+The individual research should be transparent and well documented so it can be verified by other scientists.</p>
+<p><strong>Reproducibility</strong> stands for “obtaining consistent results using the same input data, computational steps, methods, and code, and conditions of analysis”.
+It is also important to distinguish the reproducibility from <strong>replicability</strong> that stands for “obtaining consistent results across studies aimed at answering the same scientific question, each of which has obtained its own data” [NAS, 2018].
+In contrast, the term <strong>robustness</strong> of research means that you can obtain consistent results using the same data but different analyses
+Finally,  <strong>generalizability</strong> of research means that you can obtain consistent results using different data and analysis.</p>
+<img alt="Alternative text" class="align-center" src="_images/39-reproducible-replicable-robust-generalisable.jpg" />
+<p>This image was created by Scriberia for The Turing Way community and is used under a CC-BY licence. The image was obtained from <a class="reference external" href="https://zenodo.org/record/3332808">https://zenodo.org/record/3332808</a>.</p>
+</div>
+<div class="section" id="reproducibility-crisis">
+<h2>Reproducibility crisis<a class="headerlink" href="#reproducibility-crisis" title="Permalink to this headline">¶</a></h2>
+<p>Intuitively, the published research results should be reliable and trustworthy.
+Recent alarming reports showed that it is difficult to reproduce or replicate results in various medical, life and behavioural sciences (Open Science Collaboration, OSC 2015). According to Stanford Encyclopedia of Philosophy, evidence suggesting that we face reproducibility crisis include:</p>
+<ul class="simple">
+<li><p>absence of replication studies in the published literature in many scientific fields (e.g., Makel, Plucker, &amp; Hegarty 2012),</p></li>
+<li><p>failure to reproduce results of published studies in large systematic replication projects (e.g., OSC 2015; Begley &amp; Ellis 2012),</p></li>
+<li><p>evidence of publication bias (Fanelli 2010a),</p></li>
+<li><p>a high prevalence of “questionable research practices”, which inflate the rate of false positives in the literature (Simmons, Nelson, &amp; Simonsohn 2011; John, Loewenstein, &amp; Prelec 2012; Agnoli et al. 2017; Fraser et al. 2018), and</p></li>
+<li><p>the documented lack of transparency and completeness in the reporting of methods, data and analysis in scientific publication (Bakker &amp; Wicherts 2011; Nuijten et al. 2016).</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/5-signs-of-reproducibility-crisis.png"><img alt="Alternative text" class="align-center" src="_images/5-signs-of-reproducibility-crisis.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="reasons-of-reproducibility-crisis">
+<h2>Reasons of reproducibility crisis<a class="headerlink" href="#reasons-of-reproducibility-crisis" title="Permalink to this headline">¶</a></h2>
+<img alt="Alternative text" class="align-center" src="_images/levels-of-research-project.png" />
+</div>
+<div class="section" id="motivations-for-reproducible-research">
+<h2>Motivations for reproducible research<a class="headerlink" href="#motivations-for-reproducible-research" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="three-steps-to-more-reproducible-research">
+<h2>Three steps to more reproducible research<a class="headerlink" href="#three-steps-to-more-reproducible-research" title="Permalink to this headline">¶</a></h2>
+<p>The goal of this handbook is to guide you through essential research practices that will increase reproducibility in your neuroimaging research.
+For simplicity, we divided this material into 3 steps: (1) share your research plan, (2) share your data, and (3) share your code.</p>
+<ul class="simple">
+<li><p><strong>Step 1: Share your research plan</strong></p></li>
+</ul>
+<p>Here we guide you on what you should know before starting collecting your data and/or performing a new data analysis. We introduce you to concepts of pre-registration and pre-registered reports.</p>
+<ul class="simple">
+<li><p><strong>Step 2: Share your data</strong></p></li>
+</ul>
+<p>Here we help you to set up your data management plan, structure and name your project files, and share your data in open repositories.. We introduce you to Brain Imaging Data Structure (BIDS) formatting and controlling versions of your data with DataLad.</p>
+<ul class="simple">
+<li><p><strong>Step 3: Share your code</strong></p></li>
+</ul>
+<p>Here we explain how to create a reproducible data analysis workflow. We introduce you to concepts of version control (Git/GitHub), containers (Docker), and good practices for coding and documenting your analysis.</p>
 <div class="section" id="preregistration">
 <h3>Preregistration<a class="headerlink" href="#preregistration" title="Permalink to this headline">¶</a></h3>
 <p><strong>Preregistration</strong> is the practice of registering research plan before they are conducted. The preregistered report format requires reseachers to submit a description of the confirmatory hypotheses, variables, study methods and analysis plan prior to data collection. This practice allows researchers to circumvent the publication bias toward significant findings and prevent the data from taking you hostage. Preregistration makes the distinction between hypothesis testing and exploratory (hypothesis generating) research more clear. Data set won’t affect hypothesis and vice versa.</p>
@@ -207,8 +268,36 @@
 </div>
 <div class="section" id="why-all-researchers-should-preregistrate">
 <h2>Why all researchers should preregistrate?<a class="headerlink" href="#why-all-researchers-should-preregistrate" title="Permalink to this headline">¶</a></h2>
+<p>Eric-Jan Wagenmakers and Gilles Dutilh published in 2016 an article with seven selfish reasons for preregistration. In the arguments invoked, they highlight the personal benefits of pre-registration and the increased potential for success in an academic career. This section will be based on the proposals proposed by the authors (<a class="reference external" href="https://www.psychologicalscience.org/observer/seven-selfish-reasons-for-preregistration#.WRMdbLzyvgF">source link</a>).</p>
 <a class="reference internal image-reference" href="_images/seven_selfish_reasons.jpg"><img alt="Alternative text" class="align-center" src="_images/seven_selfish_reasons.jpg" style="width: 400px;" /></a>
-<p><a class="reference external" href="https://www.psychologicalscience.org/observer/seven-selfish-reasons-for-preregistration#.WRMdbLzyvgF">Source link</a></p>
+<ol class="arabic simple">
+<li><p><strong>Preregistration allows you to get credit for having been able to anticipate.</strong></p></li>
+</ol>
+<p>On datacolada.org, Leif Nelson writes: “In a world of transparent reporting, I choose preregistration as a way to selfishly show off that I predicted the outcome of my study.”</p>
+<ol class="arabic simple" start="2">
+<li><p><strong>Preregistration is exciting.</strong></p></li>
+</ol>
+<p>Researcher cannot tinker with the analysis in a post hoc fashion. It means that researcher stands before a clear question: will the theory be confirmed or disconfirmed?</p>
+<ol class="arabic simple" start="3">
+<li><p><strong>Preregistration prevents you from being taken hostage by your own data.</strong></p></li>
+</ol>
+<p>Each software has errors. The analysis of the software that supports the spacecraft shows that, despite being carefully checked, it still has bugs. It may cause bugs that transforms results. Performing pre-registration and sharing data allows you to improve the operation of subsequent stages of data analysis. There are free testing platforms for testing open source projects (CircleCl, Travis) and automatically running software tests when there is news on Github, and notifications say whether a bug has been found or everything is working well.</p>
+<ol class="arabic simple" start="4">
+<li><p><strong>Preregistration is easy.</strong></p></li>
+</ol>
+<p>When a scientist has an idea for his work, the pre-registration process itself is very much easier, especially thanks to platforms such as Open Science Framework (OSF.io) or As Predicted (aspredicted.org) where we can easily gather all the information.</p>
+<ol class="arabic simple" start="5">
+<li><p><strong>Preregistration increases your reputation.</strong></p></li>
+</ol>
+<p>Preregistered experiments are the signal of researchers’ confidence. Scientist who is not afraid to submit his or hers theories to an unambiguous test is the best factor of scientificity. It also shows that scientist  wish to conduct science in a transparent way and have done everything in hers or his power to shield herself or himself from hindsight bias and confirmation bias.</p>
+<ol class="arabic simple" start="6">
+<li><p><strong>Preregistration allows you to have manuscripts accepted “in principle“ regardless of how the results pan out.</strong></p></li>
+</ol>
+<p>It is possible to make a preregistration proposal to a journal that offers Registered Report format (mentioned earlier in <em>Types of preregistration</em> section). Thanks to approvment of preregistration proposal, regardless of the results, the journal provides publication of the results regardless of whether they confirmed the hypothesis, or not. It also allows you to improve the registered report thanks to reviewer’s comments before the data collection process begins.</p>
+<ol class="arabic simple" start="7">
+<li><p><strong>Preregistration can shield you from post hoc critique.</strong></p></li>
+</ol>
+<p>Preregistration protects the researcher from the influence of unwanted factors such as hidden moderator, inadequate manipulation check, different instruction and others. If you allow reviewers to take look at your plan of research, you will have it checked by scientists from your field.</p>
 </div>
 </div>
 

@@ -53,10 +53,38 @@ Rules of preregistration
 Why all researchers should preregistrate?
 ------------------------------------------
 
+Eric-Jan Wagenmakers and Gilles Dutilh published in 2016 an article with seven selfish reasons for preregistration. In the arguments invoked, they highlight the personal benefits of pre-registration and the increased potential for success in an academic career. This section will be based on the proposals proposed by the authors (`source link <https://www.psychologicalscience.org/observer/seven-selfish-reasons-for-preregistration#.WRMdbLzyvgF>`_).
+
 .. image:: img/seven_selfish_reasons.jpg
   :width: 400
   :align: center
   :alt: Alternative text
 
-`Source link <https://www.psychologicalscience.org/observer/seven-selfish-reasons-for-preregistration#.WRMdbLzyvgF>`_
+1.  **Preregistration allows you to get credit for having been able to anticipate.**
+
+On datacolada.org, Leif Nelson writes: “In a world of transparent reporting, I choose preregistration as a way to selfishly show off that I predicted the outcome of my study.” 
+
+2. **Preregistration is exciting.**
+
+Researcher cannot tinker with the analysis in a post hoc fashion. It means that researcher stands before a clear question: will the theory be confirmed or disconfirmed?
+
+3. **Preregistration prevents you from being taken hostage by your own data.**
+
+Each software has errors. The analysis of the software that supports the spacecraft shows that, despite being carefully checked, it still has bugs. It may cause bugs that transforms results. Performing pre-registration and sharing data allows you to improve the operation of subsequent stages of data analysis. There are free testing platforms for testing open source projects (CircleCl, Travis) and automatically running software tests when there is news on Github, and notifications say whether a bug has been found or everything is working well.
+
+4. **Preregistration is easy.**
+
+When a scientist has an idea for his work, the pre-registration process itself is very much easier, especially thanks to platforms such as Open Science Framework (OSF.io) or As Predicted (aspredicted.org) where we can easily gather all the information.
+
+5. **Preregistration increases your reputation.**
+
+Preregistered experiments are the signal of researchers’ confidence. Scientist who is not afraid to submit his or hers theories to an unambiguous test is the best factor of scientificity. It also shows that scientist  wish to conduct science in a transparent way and have done everything in hers or his power to shield herself or himself from hindsight bias and confirmation bias.
+
+6. **Preregistration allows you to have manuscripts accepted “in principle“ regardless of how the results pan out.**
+
+It is possible to make a preregistration proposal to a journal that offers Registered Report format (mentioned earlier in *Types of preregistration* section). Thanks to approvment of preregistration proposal, regardless of the results, the journal provides publication of the results regardless of whether they confirmed the hypothesis, or not. It also allows you to improve the registered report thanks to reviewer's comments before the data collection process begins.
+
+7. **Preregistration can shield you from post hoc critique.**
+
+Preregistration protects the researcher from the influence of unwanted factors such as hidden moderator, inadequate manipulation check, different instruction and others. If you allow reviewers to take look at your plan of research, you will have it checked by scientists from your field.
   

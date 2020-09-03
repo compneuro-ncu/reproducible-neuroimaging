@@ -37,7 +37,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Preregistration" href="preregistration.html" />
-    <link rel="prev" title="Welcome to reproducible-neuroimaging’s documentation!" href="index.html" /> 
+    <link rel="prev" title="Guide to reproducible neuroimaging" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,7 +83,14 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#reproducibility-in-science">Reproducibility in science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reproducibility-crisis">Reproducibility crisis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reasons-of-reproducibility-crisis">Reasons of reproducibility crisis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#motivations-for-reproducible-research">Motivations for reproducible research</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#three-steps-to-more-reproducible-research">Three steps to more reproducible research</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="preregistration.html">Preregistration</a></li>
 </ul>
 
@@ -152,6 +159,60 @@
             
   <div class="section" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>The progress of science is based on valuable research.
+While reading the research paper you naturally trust the researchers that the presented results are true and that you can build your research upon them.
+Recent reports show, however, that scientists are not able to reproduce a large amount of published research.
+In this section we introduce you to the concept of reproducibility in research, reasons of reproducibility crisis, and motivations to lead reproducible research.
+Finally, we present you three steps that might improve reproducibility in your research.</p>
+<div class="section" id="reproducibility-in-science">
+<h2>Reproducibility in science<a class="headerlink" href="#reproducibility-in-science" title="Permalink to this headline">¶</a></h2>
+<p>The goal of scientific research is to build reliable knowledge.
+To approach this, scientists should be able to repeat the analysis and replicate findings of other researchers.
+The individual research should be transparent and well documented so it can be verified by other scientists.</p>
+<p><strong>Reproducibility</strong> stands for “obtaining consistent results using the same input data, computational steps, methods, and code, and conditions of analysis”.
+It is also important to distinguish the reproducibility from <strong>replicability</strong> that stands for “obtaining consistent results across studies aimed at answering the same scientific question, each of which has obtained its own data” [NAS, 2018].
+In contrast, the term <strong>robustness</strong> of research means that you can obtain consistent results using the same data but different analyses
+Finally,  <strong>generalizability</strong> of research means that you can obtain consistent results using different data and analysis.</p>
+<img alt="Alternative text" class="align-center" src="_images/39-reproducible-replicable-robust-generalisable.jpg" />
+<p>This image was created by Scriberia for The Turing Way community and is used under a CC-BY licence. The image was obtained from <a class="reference external" href="https://zenodo.org/record/3332808">https://zenodo.org/record/3332808</a>.</p>
+</div>
+<div class="section" id="reproducibility-crisis">
+<h2>Reproducibility crisis<a class="headerlink" href="#reproducibility-crisis" title="Permalink to this headline">¶</a></h2>
+<p>Intuitively, the published research results should be reliable and trustworthy.
+Recent alarming reports showed that it is difficult to reproduce or replicate results in various medical, life and behavioural sciences (Open Science Collaboration, OSC 2015). According to Stanford Encyclopedia of Philosophy, evidence suggesting that we face reproducibility crisis include:</p>
+<ul class="simple">
+<li><p>absence of replication studies in the published literature in many scientific fields (e.g., Makel, Plucker, &amp; Hegarty 2012),</p></li>
+<li><p>failure to reproduce results of published studies in large systematic replication projects (e.g., OSC 2015; Begley &amp; Ellis 2012),</p></li>
+<li><p>evidence of publication bias (Fanelli 2010a),</p></li>
+<li><p>a high prevalence of “questionable research practices”, which inflate the rate of false positives in the literature (Simmons, Nelson, &amp; Simonsohn 2011; John, Loewenstein, &amp; Prelec 2012; Agnoli et al. 2017; Fraser et al. 2018), and</p></li>
+<li><p>the documented lack of transparency and completeness in the reporting of methods, data and analysis in scientific publication (Bakker &amp; Wicherts 2011; Nuijten et al. 2016).</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/5-signs-of-reproducibility-crisis.png"><img alt="Alternative text" class="align-center" src="_images/5-signs-of-reproducibility-crisis.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="reasons-of-reproducibility-crisis">
+<h2>Reasons of reproducibility crisis<a class="headerlink" href="#reasons-of-reproducibility-crisis" title="Permalink to this headline">¶</a></h2>
+<img alt="Alternative text" class="align-center" src="_images/levels-of-research-project.png" />
+</div>
+<div class="section" id="motivations-for-reproducible-research">
+<h2>Motivations for reproducible research<a class="headerlink" href="#motivations-for-reproducible-research" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="three-steps-to-more-reproducible-research">
+<h2>Three steps to more reproducible research<a class="headerlink" href="#three-steps-to-more-reproducible-research" title="Permalink to this headline">¶</a></h2>
+<p>The goal of this handbook is to guide you through essential research practices that will increase reproducibility in your neuroimaging research.
+For simplicity, we divided this material into 3 steps: (1) share your research plan, (2) share your data, and (3) share your code.</p>
+<ul class="simple">
+<li><p><strong>Step 1: Share your research plan</strong></p></li>
+</ul>
+<p>Here we guide you on what you should know before starting collecting your data and/or performing a new data analysis. We introduce you to concepts of pre-registration and pre-registered reports.</p>
+<ul class="simple">
+<li><p><strong>Step 2: Share your data</strong></p></li>
+</ul>
+<p>Here we help you to set up your data management plan, structure and name your project files, and share your data in open repositories.. We introduce you to Brain Imaging Data Structure (BIDS) formatting and controlling versions of your data with DataLad.</p>
+<ul class="simple">
+<li><p><strong>Step 3: Share your code</strong></p></li>
+</ul>
+<p>Here we explain how to create a reproducible data analysis workflow. We introduce you to concepts of version control (Git/GitHub), containers (Docker), and good practices for coding and documenting your analysis.</p>
+</div>
 </div>
 
 
@@ -165,7 +226,7 @@
         <a href="preregistration.html" class="btn btn-neutral float-right" title="Preregistration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to reproducible-neuroimaging’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Guide to reproducible neuroimaging" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
