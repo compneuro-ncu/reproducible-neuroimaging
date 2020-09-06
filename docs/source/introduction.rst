@@ -50,7 +50,6 @@ Recent alarming reports showed that it is difficult to reproduce or replicate re
    :width: 500
    :alt: Alternative text
 
-
 Reasons of reproducibility crisis
 -------------------------------------
 
@@ -62,6 +61,22 @@ Reasons of reproducibility crisis
 
 Motivations for reproducible research
 ---------------------------------------
+
+If scientists study phenomena that are ubiquitous in the world, there should be no contraindications for the research and the articles published on their basis to be available to everyone. That is why reproducible science encourages researchers to: 
+
+- **create open access platforms**, tools and services for researchers and students to make data suitable for re-analysis,
+
+- **share the process of creating knowledge** (real science is not only about published articles, but also the steps behind the creation of an article),
+
+- **promote science available to everyone** interested (thanks to open repositories).
+
+For many scientists who already have a lot of experience and established patterns, it is certainly not easy to start new practices of using specific platforms (improving the entire research process, but only after we learn how to use them). This guide aims to introduce resources to help you create reproducible neuroimaging research. Reproducible research brings many benefits to the entire research community. Nowadays, open research practices are becoming more popular in the academic community, as evidenced by the results of metastudy (`Mckiernan et al. 2016 <https://elifesciences.org/articles/16800>`_), which show that open access articles are cited more frequently.
+
+.. image:: img/open_access.jpg
+   :align: center
+   :alt: Alternative text
+
+Open research aims to transform research by making it more reproducible, transparent, reusable, collaborative, accountable and accessible to society. Reproducibility forces changes in the way research is conducted and disseminated using digital tools in the form of open science - the practice of publishing "primary results of publicly funded research - publications and research data.
 
 Three steps to more reproducible research
 --------------------------------------------

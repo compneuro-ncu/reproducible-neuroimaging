@@ -53,7 +53,7 @@ Rules of preregistration
 Why all researchers should preregistrate?
 ------------------------------------------
 
-Eric-Jan Wagenmakers and Gilles Dutilh published in 2016 an article with seven selfish reasons for preregistration. In the arguments invoked, they highlight the personal benefits of pre-registration and the increased potential for success in an academic career. This section will be based on the proposals proposed by the authors (`source link <https://www.psychologicalscience.org/observer/seven-selfish-reasons-for-preregistration#.WRMdbLzyvgF>`_).
+Eric-Jan Wagenmakers and Gilles Dutilh published in 2016 an `article <https://www.psychologicalscience.org/observer/seven-selfish-reasons-for-preregistration>`_ with seven selfish reasons for preregistration. In the arguments invoked, they highlight the personal benefits of pre-registration and the increased potential for success in an academic career. This section will be based on the proposals proposed by the authors.
 
 .. image:: img/seven_selfish_reasons.jpg
   :width: 400
@@ -62,11 +62,11 @@ Eric-Jan Wagenmakers and Gilles Dutilh published in 2016 an article with seven s
 
 1.  **Preregistration allows you to get credit for having been able to anticipate.**
 
-On datacolada.org, Leif Nelson writes: “In a world of transparent reporting, I choose preregistration as a way to selfishly show off that I predicted the outcome of my study.” 
+By designing repetitive workflows and sharing them with the different components of our research project, we can allow others to gain an in-depth understanding of our work. This encourages them to review our methods, test our code, propose useful changes, and make informed contributions to the further development of our project.
 
 2. **Preregistration is exciting.**
 
-Researcher cannot tinker with the analysis in a post hoc fashion. It means that researcher stands before a clear question: will the theory be confirmed or disconfirmed?
+Researcher cannot tinker with the analysis in a post hoc fashion. It means that researcher stands before a clear question: will the theory be confirmed or disconfirmed? 
 
 3. **Preregistration prevents you from being taken hostage by your own data.**
 
@@ -74,11 +74,11 @@ Each software has errors. The analysis of the software that supports the spacecr
 
 4. **Preregistration is easy.**
 
-When a scientist has an idea for his work, the pre-registration process itself is very much easier, especially thanks to platforms such as Open Science Framework (OSF.io) or As Predicted (aspredicted.org) where we can easily gather all the information.
+When a scientist has an idea for his work, the pre-registration process itself is very much easier, especially thanks to platforms such as Open Science Framework or As Predicted (as above) where we can easily gather all the information. Well-documented analyzes help us maintain easy access to all project outputs that can be effectively saved. By working in a team, colleagues can easily earn credit for their contributions. In addition, by using the underlying dataset and methods, we can easily adhere to top-level journal guidelines.
 
 5. **Preregistration increases your reputation.**
 
-Preregistered experiments are the signal of researchers’ confidence. Scientist who is not afraid to submit his or hers theories to an unambiguous test is the best factor of scientificity. It also shows that scientist  wish to conduct science in a transparent way and have done everything in hers or his power to shield herself or himself from hindsight bias and confirmation bias.
+Preregistered experiments are the signal of researchers’ confidence. Scientist who is not afraid to submit his or hers theories to an unambiguous test is the best factor of scientificity. It also shows that scientist  wish to conduct science in a transparent way and have done everything in hers or his power to shield herself or himself from hindsight bias and confirmation bias. Applying reproducibility practices separately across different parts of a project, such as data, independently executable codes and scripts, protocols and reports, allows other researchers to test and reuse our work in their research, and ensures fair recognition of our work. Scientists who publish their work with basic information are cited more often because their research results can be widely replicated and trusted. This fair credit system encourages researchers to continue to maintain repetition in their work.
 
 6. **Preregistration allows you to have manuscripts accepted “in principle“ regardless of how the results pan out.**
 
@@ -86,5 +86,5 @@ It is possible to make a preregistration proposal to a journal that offers Regis
 
 7. **Preregistration can shield you from post hoc critique.**
 
-Preregistration protects the researcher from the influence of unwanted factors such as hidden moderator, inadequate manipulation check, different instruction and others. If you allow reviewers to take look at your plan of research, you will have it checked by scientists from your field.
+Repetitive research must include the complete history and narrative of the project planning and development process. This includes information about the data, tools, methods, codes and documentation used in the research project. By keeping a complete history of our work, we can ensure the durability of the research, the reliable citation / recognition, and the usefulness of our and other work in our research fields. Preregistration protects the researcher from the influence of unwanted factors such as hidden moderator, inadequate manipulation check, different instruction and others. If you allow reviewers to take look at your plan of research, you will have it checked by scientists from your field.
   
