@@ -21,6 +21,6 @@ Contents
    preregistration
 
 
-.. include:: ../README.rst
+.. include:: ../../README.rst
 .. include:: introduction.rst
 .. include:: preregistration.rst
