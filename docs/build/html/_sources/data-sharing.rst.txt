@@ -1,0 +1,32 @@
+*********************
+Data sharing process
+*********************
+
+Open data availability makes it possible to verify the accuracy of published findings - publicly available data are exposing fewer statistical errors (Witchers et al. 2011) - and encourages researchers to conduct innovative analyzes. In our case, the whole process is simplified as neuroimaging uses an entirely digital data generation process. 
+
+Ethical approval
+-------------------
+
+Optimism about propaging reproducible science is challenged by the increasingly complex ethical, legal and social issues it raises. Reporting of scientific methods is no longer sufficient to address the complex relationship between science and society.
+
+The 1st step is to **plan data sharing**, which is associated with the ethical approval of the respondent before starting the research procedure. Ethical approval requires an explicit formal consent of the study participant to share the collected data.
+
+We encourage every researcher to use the developed format included in documentation which consist set of templates possible to insert into existing consent forms after minor adjustments. To see ultimate consent forms you can use to your research, `go here <https://open-brain-consent.readthedocs.io/en/latest/ultimate.html>`__. 
+
+Open data sharing platforms
+----------------------------
+
+The 2nd step is a submission to a repository before publishing an article allows the author to indicate to readers and reviewers the specific location of the collected data. The data itself may be used for other research in the future. 
+
+There is an widespread repository in the research community accepting data from human neuroimaging: 
+
+* `OpenfMRI <http://openfmri.org/>`_ platform dedicated to the free and open sharing of raw magnetic resonance imaging (MRI) datasets. 
+
+Every database stored to this repository conforms to the BIDS data organization scheme.
+
+Attach a license
+----------------------
+
+Data is processed differently by the legal system than creative works, therefore they require special licenses. 
+
+Major scientific institutions recommend using an unrestricted Public Domain license such as **CC0** which has universal form and it may be used throughout the world for any kind of content without adaptation to account for laws in different jurisdictions. To see more information, `click here <https://creativecommons.org/share-your-work/public-domain/cc0/>`__.

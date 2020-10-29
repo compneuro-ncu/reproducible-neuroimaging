@@ -55,6 +55,11 @@ To be more specific and for the purposes of this documentation, we extract a **p
    
 Any solution put in following template selected by the author is a suggestion of practices for reported fMRI methos put forth by Nichols et al., 2016 & Poldrack et al., 2008. The whole documentation is available on GitHub so everyone can contribute and improve the whole statement.
 
+
+
+
+
+
 Rules of preregistration
 -------------------------
 
