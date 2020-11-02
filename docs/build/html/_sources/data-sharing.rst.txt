@@ -14,7 +14,7 @@ If we want to apply for approval from an ethical review board to conduct and sha
 
 Thus, the 1st step is to **plan data sharing**, which is associated with the ethical approval of the respondent before starting the research procedure. Brain imaging data allows singling out individuals, which is a prerequisite to identification because of sensitive personal data so, thus it is safe to consider them as ‘personal data’.
 
-We encourage every researcher to use the developed format put together in documentation thank to `Open Brain Consent <https://open-brain-consent.readthedocs.io/en/stable/index.html>`_ project, which contribute templates possible to insert into existing **consent form** after minor adjustments. To see ultimate consent forms you can use to your research, `go here <https://open-brain-consent.readthedocs.io/en/latest/ultimate.html>`_.
+We encourage every researcher to use the developed format put together in documentation thank to `Open Brain Consent <https://open-brain-consent.readthedocs.io/en/stable/index.html>`_ project, which contribute templates possible to insert into existing **consent form** after minor adjustments. To see ultimate consent forms you can use to your research, `go here <https://open-brain-consent.readthedocs.io/en/latest/ultimate.html>`__.
 
 
 Data User Agreement 
@@ -44,7 +44,7 @@ There are some tools which allow researchers to strip out ‘personal data’. O
     * `PyDeface <https://github.com/poldracklab/pydeface>`_ is a tool to remove facial structure from MRI images;
     * `mridefacer <https://github.com/mih/mridefacer>`_ aligns template mask to the input image and it requires FSL and the environment variable FSLDIR to be set accordingly.
 
-The researcher is obliged to remove all identifying information before sharing the data for research purposes, including full face photographic images and all comparable images, from human subject scans.
+.. note:: The researcher is obliged to remove all identifying information before sharing the data for research purposes, including full face photographic images and all comparable images, from human subject scans.
 
 Open Data Sharing Platforms
 ----------------------------
@@ -56,7 +56,7 @@ There is an widespread repository in the research community accepting data from 
 * `OpenfMRI <http://openfmri.org/>`_ platform dedicated to the free and open sharing of raw magnetic resonance imaging (MRI) datasets; 
 * `OpenNeuro <https://openneuro.org/>`_ is a platform which accepts datasets which we can upload via our command-line utility tool.
 
-Every database stored to this repository conforms to the BIDS data organization scheme. It is also important that these open data sharing platforms do not accept datasets that have not been defaced for privacy considerations and do not contain consent forms.
+.. note:: Every database stored to this repository conforms to the BIDS data organization scheme. It is also important that these open data sharing platforms do not accept datasets that have not been defaced for privacy considerations and do not contain consent forms.
 
 Attach a License
 ----------------------

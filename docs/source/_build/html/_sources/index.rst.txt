@@ -20,9 +20,13 @@ Contents
    introduction
    preregistration
    data-sharing
+   datalad
+   bids
 
 
 .. include:: ../../README.rst
 .. include:: introduction.rst
 .. include:: preregistration.rst
 .. include:: data-sharing.rst
+.. include:: datalad.rst
+.. include:: bids.rst
