@@ -13,6 +13,8 @@ This practice allows researchers to circumvent the publication bias toward signi
 findings and prevent the data from taking you hostage.
 Preregistration also makes the distinction between hypothesis testing and exploratory (hypothesis generating) research more clear. As a result, the obtained results won’t affect the hypothesis and vice versa.
 
+**Preregistration** is the practice of registering research plan before it is conducted. The preregistered report format requires reseachers to submit a description of the confirmatory hypotheses, variables, study methods and analysis plan prior to data collection. This practice allows researchers to circumvent the publication bias toward significant findings and prevent the data from taking you hostage. Preregistration makes the distinction between hypothesis testing and exploratory (hypothesis generating) research more clear. Data set won’t affect hypothesis and vice versa. 
+
 `Click here <https://osf.io/e6auq/wiki/Example%20Preregistrations/?view>`_
 to see some examples of preregistrations segregated by discipline and study type.
 
@@ -39,10 +41,28 @@ How to make a preregistration?
 
 Follow a template from *Open Science Framework* at `Word <https://osf.io/jea94/>`_ / `GoogleDocs <http://bit.ly/preregtemplate>`_
 or `AsPredicted <https://aspredicted.org/create.php>`_ and fill it with your own research ideas.
+=======
+Open Science Framework allows to follow a simple template at  `Word <https://osf.io/jea94/>`_ / `GoogleDocs <http://bit.ly/preregtemplate>`_ or you can use another site:  `AsPredicted <https://aspredicted.org/create.php>`_ and fill it with your own research ideas.
+
+To illustrate the preregistration process, we created a simple example of the whole process:
 
 .. image:: img/how_to_prereg.png
    :align: center
    :alt: Alternative text
+
+Template for fMRI research preregistration
+-------------------------------------------
+
+To be more specific and for the purposes of this documentation, we extract a **preregistration report specifiaclly for fMRI research**, by `clicking here <https://osf.io/6juft/>`_ (Flannery, 2020).
+
+.. image:: img/fmri_prereg.png
+   :height: 625 px
+   :width: 656 px
+   :scale: 40 %
+   :align: left
+   :alt: Alternative text
+   
+Any solution put in following template selected by the author is a suggestion of practices for reported fMRI methos put forth by Nichols et al., 2016 & Poldrack et al., 2008. The whole documentation is available on GitHub so everyone can contribute and improve the whole statement.
 
 
 Rules of preregistration
@@ -125,3 +145,8 @@ In the paper, authors presented *seven selfish reasons for preregistration*. In 
    If you allow reviewers to look at your research plan,
    you will have it checked by scientists from your field before the data collections start.
   
+=======
+
+Repetitive research must include the complete history and narrative of the project planning and development process. This includes information about the data, tools, methods, codes and documentation used in the research project. By keeping a complete history of our work, we can ensure the durability of the research, the reliable citation / recognition, and the usefulness of our and other work in our research fields. Preregistration protects the researcher from the influence of unwanted factors such as hidden moderator, inadequate manipulation check, different instruction and others. If you allow reviewers to take look at your plan of research, you will have it checked by scientists from your field.
+
+>>>>>>> aafffd5f2e016c6eb42ce0b1a2c4dd4c4ccc4e41

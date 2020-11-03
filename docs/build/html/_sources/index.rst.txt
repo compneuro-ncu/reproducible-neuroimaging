@@ -16,3 +16,6 @@ Contents
 
    introduction
    preregistration
+   data-sharing
+   datalad
+   bids

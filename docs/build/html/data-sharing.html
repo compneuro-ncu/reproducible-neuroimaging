@@ -1,0 +1,288 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data sharing process &mdash; reproducible-neuroimaging 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Get your data" href="datalad.html" />
+    <link rel="prev" title="Preregistration" href="preregistration.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> reproducible-neuroimaging
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preregistration.html">Preregistration</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data sharing process</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ethical-approval">Ethical Approval</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-user-agreement">Data User Agreement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#anonymization-process">Anonymization Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#open-data-sharing-platforms">Open Data Sharing Platforms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#attach-a-license">Attach a License</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="datalad.html">Get your data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bids.html">Prepare your data</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">reproducible-neuroimaging</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Data sharing process</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/data-sharing.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="data-sharing-process">
+<h1>Data sharing process<a class="headerlink" href="#data-sharing-process" title="Permalink to this headline">¶</a></h1>
+<p>Open data availability makes it possible to verify the accuracy of published findings - publicly available data are exposing fewer statistical errors, (Witchers et al. 2011) - and encourages researchers to conduct innovative analyzes. In our case, the whole process is simplified as neuroimaging uses an entirely digital data generation process.</p>
+<p>Optimism about propaging reproducible science is challenged by the increasingly complex ethical, legal and social issues it raises. Reporting of scientific methods is no longer sufficient to address the complex relationship between science and society.</p>
+<div class="section" id="ethical-approval">
+<h2>Ethical Approval<a class="headerlink" href="#ethical-approval" title="Permalink to this headline">¶</a></h2>
+<p>If we want to apply for approval from an ethical review board to conduct and share brain imaging data, we have to include the study protocol, a patient or participant information letter, a consent form, and some extra information.</p>
+<p>Thus, the 1st step is to <strong>plan data sharing</strong>, which is associated with the ethical approval of the respondent before starting the research procedure. Brain imaging data allows singling out individuals, which is a prerequisite to identification because of sensitive personal data so, thus it is safe to consider them as ‘personal data’.</p>
+<p>We encourage every researcher to use the developed format put together in documentation thank to <a class="reference external" href="https://open-brain-consent.readthedocs.io/en/stable/index.html">Open Brain Consent</a> project, which contribute templates possible to insert into existing <strong>consent form</strong> after minor adjustments. To see ultimate consent forms you can use to your research, <a class="reference external" href="https://open-brain-consent.readthedocs.io/en/latest/ultimate.html">go here</a>.</p>
+</div>
+<div class="section" id="data-user-agreement">
+<h2>Data User Agreement<a class="headerlink" href="#data-user-agreement" title="Permalink to this headline">¶</a></h2>
+<p>Data User Agreement for accessing identifiable human data, specifies how to deal with subject confidentiality issues. Once again, Open Brain Consent allows using the example of such an agreement which is <a class="reference external" href="usingthemodelofsuchanagreement">available here</a> in couple translations. The researcher is “nominated” to be <strong>the data controller</strong> who is determining the purposes for which and the means by which personal data is processed.</p>
+<p>What’s more, a Data User Agreement helps researchers to have access to the data even outside of Europe.</p>
+</div>
+<div class="section" id="anonymization-process">
+<h2>Anonymization Process<a class="headerlink" href="#anonymization-process" title="Permalink to this headline">¶</a></h2>
+<p>There are some tools which allow researchers to strip out ‘personal data’. Open Brain Consent presents couple of solutions such as:</p>
+<ul>
+<li><p><strong>to sanitize the headers/filenames</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://www.nitrc.org/projects/de-identification">DeID</a> is a Java program which allows users to remove identifying information in neuroimaging datasets, while still maintaining the association among different data types from the same subject for further studies;</p></li>
+<li><p><a class="reference external" href="https://github.com/pydicom/pydicom">PyDICOM’s deid</a> is a Python module intended for basic coding of medical images, which means “cleaning” image headers and pixel data, and integrating with your own functions to replace with anonymous identifiers;</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>to skull stripping</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/BET/UserGuide">BET</a> is the command-line script which deletes non-brain tissue from an image of the whole head;</p></li>
+<li><p><a class="reference external" href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation">FSL</a> is a comprehensive library of analysis tools for FMRI, MRI and DTI brain imaging data;</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>to faces/dental stripping</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://github.com/poldracklab/pydeface">PyDeface</a> is a tool to remove facial structure from MRI images;</p></li>
+<li><p><a class="reference external" href="https://github.com/mih/mridefacer">mridefacer</a> aligns template mask to the input image and it requires FSL and the environment variable FSLDIR to be set accordingly.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The researcher is obliged to remove all identifying information before sharing the data for research purposes, including full face photographic images and all comparable images, from human subject scans.</p>
+</div>
+</div>
+<div class="section" id="open-data-sharing-platforms">
+<h2>Open Data Sharing Platforms<a class="headerlink" href="#open-data-sharing-platforms" title="Permalink to this headline">¶</a></h2>
+<p>The 2nd step is a submission to a repository before publishing an article allows the author to indicate to readers and reviewers the specific location of the collected data. The data itself may be used for other research in the future.</p>
+<p>There is an widespread repository in the research community accepting data from human neuroimaging:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://openfmri.org/">OpenfMRI</a> platform dedicated to the free and open sharing of raw magnetic resonance imaging (MRI) datasets;</p></li>
+<li><p><a class="reference external" href="https://openneuro.org/">OpenNeuro</a> is a platform which accepts datasets which we can upload via our command-line utility tool.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Every database stored to this repository conforms to the BIDS data organization scheme. It is also important that these open data sharing platforms do not accept datasets that have not been defaced for privacy considerations and do not contain consent forms.</p>
+</div>
+</div>
+<div class="section" id="attach-a-license">
+<h2>Attach a License<a class="headerlink" href="#attach-a-license" title="Permalink to this headline">¶</a></h2>
+<p>Data is processed differently by the legal system than creative works, therefore they require special licenses.</p>
+<p>Major scientific institutions recommend using an unrestricted Public Domain license such as <strong>CC0</strong> which has universal form and it may be used throughout the world for any kind of content without adaptation to account for laws in different jurisdictions. To see more information, <a class="reference external" href="https://creativecommons.org/share-your-work/public-domain/cc0/">click here</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="datalad.html" class="btn btn-neutral float-right" title="Get your data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="preregistration.html" class="btn btn-neutral float-left" title="Preregistration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Karolina Finc, Weronika Sójka
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
