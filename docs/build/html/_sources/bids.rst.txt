@@ -1,6 +1,5 @@
-*********************
 Prepare your data
-*********************
+===============================
 
 For many years, the research community has been trying to find a way to effectively store and manage the data collected from the fMRI scanner.  Neuroimaging experiments involve a complex set of data that can be organized in many different ways. 
 

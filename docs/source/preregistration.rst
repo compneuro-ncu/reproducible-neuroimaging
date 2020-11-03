@@ -7,7 +7,7 @@ Preregistration
 ======================
 
 **Preregistration** is the practice of registering your detailed research plan before conducting a study.
-The ***preregistered report** format requires researchers to submit a description of the confirmatory hypotheses,
+The **preregistered report** format requires researchers to submit a description of the confirmatory hypotheses,
 variables, study methods, and analysis plan prior to data collection.
 This practice allows researchers to circumvent the publication bias toward significant
 findings and prevent the data from taking you hostage.
@@ -41,7 +41,6 @@ How to make a preregistration?
 
 Follow a template from *Open Science Framework* at `Word <https://osf.io/jea94/>`_ / `GoogleDocs <http://bit.ly/preregtemplate>`_
 or `AsPredicted <https://aspredicted.org/create.php>`_ and fill it with your own research ideas.
-=======
 Open Science Framework allows to follow a simple template at  `Word <https://osf.io/jea94/>`_ / `GoogleDocs <http://bit.ly/preregtemplate>`_ or you can use another site:  `AsPredicted <https://aspredicted.org/create.php>`_ and fill it with your own research ideas.
 
 To illustrate the preregistration process, we created a simple example of the whole process:
@@ -49,6 +48,10 @@ To illustrate the preregistration process, we created a simple example of the wh
 .. image:: img/how_to_prereg.png
    :align: center
    :alt: Alternative text
+
+
+
+
 
 Template for fMRI research preregistration
 -------------------------------------------
@@ -144,9 +147,3 @@ In the paper, authors presented *seven selfish reasons for preregistration*. In 
    inadequate manipulation check, different instruction, and others.
    If you allow reviewers to look at your research plan,
    you will have it checked by scientists from your field before the data collections start.
-  
-=======
-
-Repetitive research must include the complete history and narrative of the project planning and development process. This includes information about the data, tools, methods, codes and documentation used in the research project. By keeping a complete history of our work, we can ensure the durability of the research, the reliable citation / recognition, and the usefulness of our and other work in our research fields. Preregistration protects the researcher from the influence of unwanted factors such as hidden moderator, inadequate manipulation check, different instruction and others. If you allow reviewers to take look at your plan of research, you will have it checked by scientists from your field.
-
->>>>>>> aafffd5f2e016c6eb42ce0b1a2c4dd4c4ccc4e41

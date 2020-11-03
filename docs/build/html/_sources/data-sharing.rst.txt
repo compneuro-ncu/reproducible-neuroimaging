@@ -1,6 +1,5 @@
-*********************
 Data sharing process
-*********************
+==========================
 
 Open data availability makes it possible to verify the accuracy of published findings - publicly available data are exposing fewer statistical errors, (Witchers et al. 2011) - and encourages researchers to conduct innovative analyzes. In our case, the whole process is simplified as neuroimaging uses an entirely digital data generation process. 
 
