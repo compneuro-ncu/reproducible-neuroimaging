@@ -6,10 +6,7 @@
 Guide to reproducible neuroimaging
 =====================================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
+.. include:: ../README.rst
 
 Contents
 --------
@@ -19,8 +16,3 @@ Contents
 
    introduction
    preregistration
-
-
-.. include:: ../README.rst
-.. include:: introduction.rst
-.. include:: preregistration.rst
