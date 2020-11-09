@@ -1,6 +1,6 @@
-***************
 Introduction
-***************
+================================
+
 
 The progress of science is based on valuable research.
 While reading the research paper you naturally trust the researchers that the presented results are true and that you can build your research upon them.
@@ -9,7 +9,7 @@ In this section we introduce you to the concept of reproducibility in research, 
 Finally, we present you three steps that might improve reproducibility in your research.
 
 Reproducibility in science
-----------------------------
+----------------------------------
 
 The goal of scientific research is to build reliable knowledge.
 To approach this, scientists should be able to repeat the analysis and replicate findings of other researchers.
@@ -29,7 +29,7 @@ This image was created by Scriberia for The Turing Way community and is used und
 
 
 Reproducibility crisis
--------------------------
+----------------------------------
 
 Intuitively, the published research results should be reliable and trustworthy.
 Recent alarming reports showed that it is difficult to reproduce or replicate results in various medical, life and behavioural sciences (Open Science Collaboration, OSC 2015). According to Stanford Encyclopedia of Philosophy, evidence suggesting that we face reproducibility crisis include:
@@ -60,7 +60,7 @@ Reasons of reproducibility crisis
 
 
 Motivations for reproducible research
----------------------------------------
+-----------------------------------------
 
 If scientists study phenomena that are ubiquitous in the world, there should be no contraindications for the research and the articles published on their basis to be available to everyone. That is why reproducible science encourages researchers to: 
 

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data sharing process &mdash; reproducible-neuroimaging 0.0.1 documentation</title>
+  <title>Data sharing &mdash; reproducible-neuroimaging 0.0.1 documentation</title>
   
 
   
@@ -36,7 +36,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Get your data" href="datalad.html" />
+    <link rel="next" title="Data management" href="datalad.html" />
     <link rel="prev" title="Preregistration" href="preregistration.html" /> 
 </head>
 
@@ -85,16 +85,18 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preregistration.html">Preregistration</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Data sharing process</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#ethical-approval">Ethical Approval</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#data-user-agreement">Data User Agreement</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#anonymization-process">Anonymization Process</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#open-data-sharing-platforms">Open Data Sharing Platforms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#attach-a-license">Attach a License</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data sharing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ethical-approval">Ethical approval</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#data-user-agreement">Data user agreement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#anonymization-process">Anonymization process</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="datalad.html">Get your data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bids.html">Prepare your data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#open-data-sharing-platforms">Open data sharing platforms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#attach-a-license">Attach a license</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="datalad.html">Data management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bids.html">Data structure</a></li>
 </ul>
 
             
@@ -141,7 +143,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Data sharing process</li>
+      <li>Data sharing</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,23 +162,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="data-sharing-process">
-<h1>Data sharing process<a class="headerlink" href="#data-sharing-process" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="data-sharing">
+<h1>Data sharing<a class="headerlink" href="#data-sharing" title="Permalink to this headline">¶</a></h1>
 <p>Open data availability makes it possible to verify the accuracy of published findings - publicly available data are exposing fewer statistical errors, (Witchers et al. 2011) - and encourages researchers to conduct innovative analyzes. In our case, the whole process is simplified as neuroimaging uses an entirely digital data generation process.</p>
 <p>Optimism about propaging reproducible science is challenged by the increasingly complex ethical, legal and social issues it raises. Reporting of scientific methods is no longer sufficient to address the complex relationship between science and society.</p>
 <div class="section" id="ethical-approval">
-<h2>Ethical Approval<a class="headerlink" href="#ethical-approval" title="Permalink to this headline">¶</a></h2>
-<p>If we want to apply for approval from an ethical review board to conduct and share brain imaging data, we have to include the study protocol, a patient or participant information letter, a consent form, and some extra information.</p>
-<p>Thus, the 1st step is to <strong>plan data sharing</strong>, which is associated with the ethical approval of the respondent before starting the research procedure. Brain imaging data allows singling out individuals, which is a prerequisite to identification because of sensitive personal data so, thus it is safe to consider them as ‘personal data’.</p>
-<p>We encourage every researcher to use the developed format put together in documentation thank to <a class="reference external" href="https://open-brain-consent.readthedocs.io/en/stable/index.html">Open Brain Consent</a> project, which contribute templates possible to insert into existing <strong>consent form</strong> after minor adjustments. To see ultimate consent forms you can use to your research, <a class="reference external" href="https://open-brain-consent.readthedocs.io/en/latest/ultimate.html">go here</a>.</p>
-</div>
+<h2>Ethical approval<a class="headerlink" href="#ethical-approval" title="Permalink to this headline">¶</a></h2>
+<p>If we want to apply for approval from an ethical review board to conduct and share brain imaging data,
+we have to include the study protocol, a patient or participant information letter, a consent form, and some extra information.</p>
+<p>Thus, the 1st step is to <strong>plan data sharing</strong>, which is associated with the ethical approval of the respondent before starting the research procedure.
+Brain imaging data allows singling out individuals, which is a prerequisite to identification because of sensitive personal data so,
+thus it is safe to consider them as ‘personal data’.</p>
+<p>We encourage every researcher to use the developed format put together in documentation thank
+to <a class="reference external" href="https://open-brain-consent.readthedocs.io/en/stable/index.html">Open Brain Consent</a> project,
+which contribute templates possible to insert into existing <strong>consent form</strong> after minor adjustments.
+To see ultimate consent forms you can use to your research, <a class="reference external" href="https://open-brain-consent.readthedocs.io/en/latest/ultimate.html">go here</a>.</p>
 <div class="section" id="data-user-agreement">
-<h2>Data User Agreement<a class="headerlink" href="#data-user-agreement" title="Permalink to this headline">¶</a></h2>
-<p>Data User Agreement for accessing identifiable human data, specifies how to deal with subject confidentiality issues. Once again, Open Brain Consent allows using the example of such an agreement which is <a class="reference external" href="usingthemodelofsuchanagreement">available here</a> in couple translations. The researcher is “nominated” to be <strong>the data controller</strong> who is determining the purposes for which and the means by which personal data is processed.</p>
+<h3>Data user agreement<a class="headerlink" href="#data-user-agreement" title="Permalink to this headline">¶</a></h3>
+<p>Data User Agreement for accessing identifiable human data, specifies how to deal with subject confidentiality issues.
+Once again, Open Brain Consent allows using the example of such an agreement which is <a class="reference external" href="usingthemodelofsuchanagreement">available here</a> in couple translations.
+The researcher is “nominated” to be <strong>the data controller</strong> who is determining the purposes for which and the means by which personal data is processed.</p>
 <p>What’s more, a Data User Agreement helps researchers to have access to the data even outside of Europe.</p>
 </div>
 <div class="section" id="anonymization-process">
-<h2>Anonymization Process<a class="headerlink" href="#anonymization-process" title="Permalink to this headline">¶</a></h2>
+<h3>Anonymization process<a class="headerlink" href="#anonymization-process" title="Permalink to this headline">¶</a></h3>
 <p>There are some tools which allow researchers to strip out ‘personal data’. Open Brain Consent presents couple of solutions such as:</p>
 <ul>
 <li><p><strong>to sanitize the headers/filenames</strong>:</p>
@@ -209,8 +218,9 @@
 <p>The researcher is obliged to remove all identifying information before sharing the data for research purposes, including full face photographic images and all comparable images, from human subject scans.</p>
 </div>
 </div>
+</div>
 <div class="section" id="open-data-sharing-platforms">
-<h2>Open Data Sharing Platforms<a class="headerlink" href="#open-data-sharing-platforms" title="Permalink to this headline">¶</a></h2>
+<h2>Open data sharing platforms<a class="headerlink" href="#open-data-sharing-platforms" title="Permalink to this headline">¶</a></h2>
 <p>The 2nd step is a submission to a repository before publishing an article allows the author to indicate to readers and reviewers the specific location of the collected data. The data itself may be used for other research in the future.</p>
 <p>There is an widespread repository in the research community accepting data from human neuroimaging:</p>
 <ul class="simple">
@@ -223,7 +233,7 @@
 </div>
 </div>
 <div class="section" id="attach-a-license">
-<h2>Attach a License<a class="headerlink" href="#attach-a-license" title="Permalink to this headline">¶</a></h2>
+<h2>Attach a license<a class="headerlink" href="#attach-a-license" title="Permalink to this headline">¶</a></h2>
 <p>Data is processed differently by the legal system than creative works, therefore they require special licenses.</p>
 <p>Major scientific institutions recommend using an unrestricted Public Domain license such as <strong>CC0</strong> which has universal form and it may be used throughout the world for any kind of content without adaptation to account for laws in different jurisdictions. To see more information, <a class="reference external" href="https://creativecommons.org/share-your-work/public-domain/cc0/">click here</a>.</p>
 </div>
@@ -237,7 +247,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="datalad.html" class="btn btn-neutral float-right" title="Get your data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="datalad.html" class="btn btn-neutral float-right" title="Data management" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="preregistration.html" class="btn btn-neutral float-left" title="Preregistration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

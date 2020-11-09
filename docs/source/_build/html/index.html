@@ -84,9 +84,9 @@
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preregistration.html">Preregistration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-sharing.html">Data sharing process</a></li>
-<li class="toctree-l1"><a class="reference internal" href="datalad.html">Get your data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bids.html">Prepare your data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-sharing.html">Data sharing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datalad.html">Data management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bids.html">Data structure</a></li>
 </ul>
 
             
@@ -154,8 +154,6 @@
             
   <div class="section" id="guide-to-reproducible-neuroimaging">
 <h1>Guide to reproducible neuroimaging<a class="headerlink" href="#guide-to-reproducible-neuroimaging" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-</div>
 <div class="section" id="contents">
 <h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
@@ -170,309 +168,36 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="preregistration.html">Preregistration</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="preregistration.html#types-of-preregistration">Types of preregistration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="preregistration.html#how-to-make-a-preregistration">How to make a preregistration?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="preregistration.html#template-for-fmri-research-preregistration">Template for fMRI research preregistration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preregistration.html#how-to-make-a-preregistration">How to make a preregistration?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="preregistration.html#domain-agnostic-template">Domain-agnostic template</a></li>
+<li class="toctree-l3"><a class="reference internal" href="preregistration.html#fmri-research-template">fMRI research template</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="preregistration.html#rules-of-preregistration">Rules of preregistration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="preregistration.html#why-all-researchers-should-preregistrate">Why all researchers should preregistrate?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preregistration.html#why-all-researchers-should-preregister-their-studies">Why all researchers should preregister their studies?</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="data-sharing.html">Data sharing process</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="data-sharing.html#ethical-approval">Ethical Approval</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data-sharing.html#data-user-agreement">Data User Agreement</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data-sharing.html#anonymization-process">Anonymization Process</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data-sharing.html#open-data-sharing-platforms">Open Data Sharing Platforms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data-sharing.html#attach-a-license">Attach a License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-sharing.html">Data sharing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data-sharing.html#ethical-approval">Ethical approval</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data-sharing.html#data-user-agreement">Data user agreement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-sharing.html#anonymization-process">Anonymization process</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="datalad.html">Get your data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data-sharing.html#open-data-sharing-platforms">Open data sharing platforms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-sharing.html#attach-a-license">Attach a license</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="datalad.html">Data management</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="datalad.html#basics">Basics</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="bids.html">Prepare your data</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="bids.html">Data structure</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="bids.html#brain-imaging-data-structure">Brain Imaging Data Structure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bids.html#create-a-bids-compatible-dataset">Create a BIDS compatible dataset</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<p># reproducible-neuroimaging</p>
-<div class="section" id="introduction">
-<h3>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h3>
-<p>The progress of science is based on valuable research.
-While reading the research paper you naturally trust the researchers that the presented results are true and that you can build your research upon them.
-Recent reports show, however, that scientists are not able to reproduce a large amount of published research.
-In this section we introduce you to the concept of reproducibility in research, reasons of reproducibility crisis, and motivations to lead reproducible research.
-Finally, we present you three steps that might improve reproducibility in your research.</p>
-</div>
-</div>
-<div class="section" id="reproducibility-in-science">
-<h2>Reproducibility in science<a class="headerlink" href="#reproducibility-in-science" title="Permalink to this headline">¶</a></h2>
-<p>The goal of scientific research is to build reliable knowledge.
-To approach this, scientists should be able to repeat the analysis and replicate findings of other researchers.
-The individual research should be transparent and well documented so it can be verified by other scientists.</p>
-<p><strong>Reproducibility</strong> stands for “obtaining consistent results using the same input data, computational steps, methods, and code, and conditions of analysis”.
-It is also important to distinguish the reproducibility from <strong>replicability</strong> that stands for “obtaining consistent results across studies aimed at answering the same scientific question, each of which has obtained its own data” [NAS, 2018].
-In contrast, the term <strong>robustness</strong> of research means that you can obtain consistent results using the same data but different analyses
-Finally,  <strong>generalizability</strong> of research means that you can obtain consistent results using different data and analysis.</p>
-<img alt="Alternative text" class="align-center" src="_images/39-reproducible-replicable-robust-generalisable.jpg" />
-<p>This image was created by Scriberia for The Turing Way community and is used under a CC-BY licence. The image was obtained from <a class="reference external" href="https://zenodo.org/record/3332808">https://zenodo.org/record/3332808</a>.</p>
-</div>
-<div class="section" id="reproducibility-crisis">
-<h2>Reproducibility crisis<a class="headerlink" href="#reproducibility-crisis" title="Permalink to this headline">¶</a></h2>
-<p>Intuitively, the published research results should be reliable and trustworthy.
-Recent alarming reports showed that it is difficult to reproduce or replicate results in various medical, life and behavioural sciences (Open Science Collaboration, OSC 2015). According to Stanford Encyclopedia of Philosophy, evidence suggesting that we face reproducibility crisis include:</p>
-<ul class="simple">
-<li><p>absence of replication studies in the published literature in many scientific fields (e.g., Makel, Plucker, &amp; Hegarty 2012),</p></li>
-<li><p>failure to reproduce results of published studies in large systematic replication projects (e.g., OSC 2015; Begley &amp; Ellis 2012),</p></li>
-<li><p>evidence of publication bias (Fanelli 2010a),</p></li>
-<li><p>a high prevalence of “questionable research practices”, which inflate the rate of false positives in the literature (Simmons, Nelson, &amp; Simonsohn 2011; John, Loewenstein, &amp; Prelec 2012; Agnoli et al. 2017; Fraser et al. 2018), and</p></li>
-<li><p>the documented lack of transparency and completeness in the reporting of methods, data and analysis in scientific publication (Bakker &amp; Wicherts 2011; Nuijten et al. 2016).</p></li>
-</ul>
-<a class="reference internal image-reference" href="_images/5-signs-of-reproducibility-crisis.png"><img alt="Alternative text" class="align-center" src="_images/5-signs-of-reproducibility-crisis.png" style="width: 500px;" /></a>
-</div>
-<div class="section" id="reasons-of-reproducibility-crisis">
-<h2>Reasons of reproducibility crisis<a class="headerlink" href="#reasons-of-reproducibility-crisis" title="Permalink to this headline">¶</a></h2>
-<img alt="Alternative text" class="align-center" src="_images/levels-of-research-project.png" />
-</div>
-<div class="section" id="motivations-for-reproducible-research">
-<h2>Motivations for reproducible research<a class="headerlink" href="#motivations-for-reproducible-research" title="Permalink to this headline">¶</a></h2>
-<p>If scientists study phenomena that are ubiquitous in the world, there should be no contraindications for the research and the articles published on their basis to be available to everyone. That is why reproducible science encourages researchers to:</p>
-<ul class="simple">
-<li><p><strong>create open access platforms</strong>, tools and services for researchers and students to make data suitable for re-analysis,</p></li>
-<li><p><strong>share the process of creating knowledge</strong> (real science is not only about published articles, but also the steps behind the creation of an article),</p></li>
-<li><p><strong>promote science available to everyone</strong> interested (thanks to open repositories).</p></li>
-</ul>
-<p>For many scientists who already have a lot of experience and established patterns, it is certainly not easy to start new practices of using specific platforms (improving the entire research process, but only after we learn how to use them). This guide aims to introduce resources to help you create reproducible neuroimaging research. Reproducible research brings many benefits to the entire research community. Nowadays, open research practices are becoming more popular in the academic community, as evidenced by the results of metastudy (<a class="reference external" href="https://elifesciences.org/articles/16800">Mckiernan et al. 2016</a>), which show that open access articles are cited more frequently.</p>
-<img alt="Alternative text" class="align-center" src="_images/open_access.jpg" />
-<p>Open research aims to transform research by making it more reproducible, transparent, reusable, collaborative, accountable and accessible to society. Reproducibility forces changes in the way research is conducted and disseminated using digital tools in the form of open science - the practice of publishing “primary results of publicly funded research - publications and research data.</p>
-</div>
-<div class="section" id="three-steps-to-more-reproducible-research">
-<h2>Three steps to more reproducible research<a class="headerlink" href="#three-steps-to-more-reproducible-research" title="Permalink to this headline">¶</a></h2>
-<p>The goal of this handbook is to guide you through essential research practices that will increase reproducibility in your neuroimaging research.
-For simplicity, we divided this material into 3 steps: (1) share your research plan, (2) share your data, and (3) share your code.</p>
-<ul class="simple">
-<li><p><strong>Step 1: Share your research plan</strong></p></li>
-</ul>
-<p>Here we guide you on what you should know before starting collecting your data and/or performing a new data analysis. We introduce you to concepts of pre-registration and pre-registered reports.</p>
-<ul class="simple">
-<li><p><strong>Step 2: Share your data</strong></p></li>
-</ul>
-<p>Here we help you to set up your data management plan, structure and name your project files, and share your data in open repositories.. We introduce you to Brain Imaging Data Structure (BIDS) formatting and controlling versions of your data with DataLad.</p>
-<ul class="simple">
-<li><p><strong>Step 3: Share your code</strong></p></li>
-</ul>
-<p>Here we explain how to create a reproducible data analysis workflow. We introduce you to concepts of version control (Git/GitHub), containers (Docker), and good practices for coding and documenting your analysis.</p>
-<div class="section" id="preregistration">
-<h3>Preregistration<a class="headerlink" href="#preregistration" title="Permalink to this headline">¶</a></h3>
-<p><strong>Preregistration</strong> is the practice of registering research plan before it is conducted. The preregistered report format requires reseachers to submit a description of the confirmatory hypotheses, variables, study methods and analysis plan prior to data collection. This practice allows researchers to circumvent the publication bias toward significant findings and prevent the data from taking you hostage. Preregistration makes the distinction between hypothesis testing and exploratory (hypothesis generating) research more clear. Data set won’t affect hypothesis and vice versa.</p>
-<p><a class="reference external" href="https://osf.io/e6auq/wiki/Example%20Preregistrations/?view">Click here</a> to see some examples of preregistrations segregated by discipline and study type.</p>
-</div>
-</div>
-<hr class="docutils" />
-<div class="section" id="types-of-preregistration">
-<h2>Types of preregistration<a class="headerlink" href="#types-of-preregistration" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li><p>Unreviewed</p></li>
-</ol>
-<p><em>Unreviewed registration report</em> contains detailed description of researcher’s plans for a study as possible, and researcher saves those plans in a time-stamped, uneditable archive; can be shared with reviewers, editors, and other researchers.</p>
-<ol class="arabic simple" start="2">
-<li><p>Reviewed</p></li>
-</ol>
-<p>In <em>reviewed registration report</em> researcher submits a detailed proposal for a study to a journal before conducting the study (these registered reports have the same virtues as preregistration, but they also address the problem of publication bias because the studies are published regardless of their outcomes!); proposed study will be informative regardless of its outcome.</p>
-<ol class="arabic simple" start="3">
-<li><p>RRR - Registered Replication Reports</p></li>
-</ol>
-<p>In <em>registered replication reports</em> researchers direct replication of one or more original findings. Many labs follow the same preregistered plan, and the results from all of those independent studies are published collectively regardless of the outcomes of individual studies.</p>
-</div>
-<div class="section" id="how-to-make-a-preregistration">
-<h2>How to make a preregistration?<a class="headerlink" href="#how-to-make-a-preregistration" title="Permalink to this headline">¶</a></h2>
-<p>Open Science Framework allows to follow a simple template at  <a class="reference external" href="https://osf.io/jea94/">Word</a> / <a class="reference external" href="http://bit.ly/preregtemplate">GoogleDocs</a> or you can use another site:  <a class="reference external" href="https://aspredicted.org/create.php">AsPredicted</a> and fill it with your own research ideas.</p>
-<p>To illustrate the preregistration process, we created a simple example of the whole process:</p>
-<img alt="Alternative text" class="align-center" src="_images/how_to_prereg.png" />
-</div>
-<div class="section" id="template-for-fmri-research-preregistration">
-<h2>Template for fMRI research preregistration<a class="headerlink" href="#template-for-fmri-research-preregistration" title="Permalink to this headline">¶</a></h2>
-<p>To be more specific and for the purposes of this documentation, we extract a <strong>preregistration report specifiaclly for fMRI research</strong>, by <a class="reference external" href="https://osf.io/6juft/">clicking here</a> (Flannery, 2020).</p>
-<a class="reference internal image-reference" href="_images/fmri_prereg.png"><img alt="Alternative text" class="align-left" src="_images/fmri_prereg.png" style="width: 262.40000000000003px; height: 250.0px;" /></a>
-<p>Any solution put in following template selected by the author is a suggestion of practices for reported fMRI methos put forth by Nichols et al., 2016 &amp; Poldrack et al., 2008. The whole documentation is available on GitHub so everyone can contribute and improve the whole statement.</p>
-</div>
-<div class="section" id="rules-of-preregistration">
-<h2>Rules of preregistration<a class="headerlink" href="#rules-of-preregistration" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li><p>Once registered, your preregistration will have a short URL for citation. <strong>Remember to include a link to your registration report</strong>.</p></li>
-<li><p><strong>Report the results of ALL preregistered analyses regardless of outcome</strong>.</p></li>
-<li><p><strong>ANY unregistered analyses must be transparently reported as exploratory finding</strong> Do not stop yourself before make transparent changes to analysis plan but remember to report the change and its justification (it have to be reported somehow as intuitive suggestions).</p></li>
-</ol>
-</div>
-<div class="section" id="why-all-researchers-should-preregistrate">
-<h2>Why all researchers should preregistrate?<a class="headerlink" href="#why-all-researchers-should-preregistrate" title="Permalink to this headline">¶</a></h2>
-<p>Eric-Jan Wagenmakers and Gilles Dutilh published in 2016 an <a class="reference external" href="https://www.psychologicalscience.org/observer/seven-selfish-reasons-for-preregistration">article</a> with seven selfish reasons for preregistration. In the arguments invoked, they highlight the personal benefits of pre-registration and the increased potential for success in an academic career. This section will be based on the proposals proposed by the authors.</p>
-<a class="reference internal image-reference" href="_images/seven_selfish_reasons.jpg"><img alt="Alternative text" class="align-center" src="_images/seven_selfish_reasons.jpg" style="width: 400px;" /></a>
-<ol class="arabic simple">
-<li><p><strong>Preregistration allows you to get credit for having been able to anticipate.</strong></p></li>
-</ol>
-<p>By designing repetitive workflows and sharing them with the different components of our research project, we can allow others to gain an in-depth understanding of our work. This encourages them to review our methods, test our code, propose useful changes, and make informed contributions to the further development of our project.</p>
-<ol class="arabic simple" start="2">
-<li><p><strong>Preregistration is exciting.</strong></p></li>
-</ol>
-<p>Researcher cannot tinker with the analysis in a post hoc fashion. It means that researcher stands before a clear question: will the theory be confirmed or disconfirmed?</p>
-<ol class="arabic simple" start="3">
-<li><p><strong>Preregistration prevents you from being taken hostage by your own data.</strong></p></li>
-</ol>
-<p>Each software has errors. The analysis of the software that supports the spacecraft shows that, despite being carefully checked, it still has bugs. It may cause bugs that transforms results. Performing pre-registration and sharing data allows you to improve the operation of subsequent stages of data analysis. There are free testing platforms for testing open source projects (CircleCl, Travis) and automatically running software tests when there is news on Github, and notifications say whether a bug has been found or everything is working well.</p>
-<ol class="arabic simple" start="4">
-<li><p><strong>Preregistration is easy.</strong></p></li>
-</ol>
-<p>When a scientist has an idea for his work, the pre-registration process itself is very much easier, especially thanks to platforms such as Open Science Framework or As Predicted (as above) where we can easily gather all the information. Well-documented analyzes help us maintain easy access to all project outputs that can be effectively saved. By working in a team, colleagues can easily earn credit for their contributions. In addition, by using the underlying dataset and methods, we can easily adhere to top-level journal guidelines.</p>
-<ol class="arabic simple" start="5">
-<li><p><strong>Preregistration increases your reputation.</strong></p></li>
-</ol>
-<p>Preregistered experiments are the signal of researchers’ confidence. Scientist who is not afraid to submit his or hers theories to an unambiguous test is the best factor of scientificity. It also shows that scientist  wish to conduct science in a transparent way and have done everything in hers or his power to shield herself or himself from hindsight bias and confirmation bias. Applying reproducibility practices separately across different parts of a project, such as data, independently executable codes and scripts, protocols and reports, allows other researchers to test and reuse our work in their research, and ensures fair recognition of our work. Scientists who publish their work with basic information are cited more often because their research results can be widely replicated and trusted. This fair credit system encourages researchers to continue to maintain repetition in their work.</p>
-<ol class="arabic simple" start="6">
-<li><p><strong>Preregistration allows you to have manuscripts accepted “in principle“ regardless of how the results pan out.</strong></p></li>
-</ol>
-<p>It is possible to make a preregistration proposal to a journal that offers Registered Report format (mentioned earlier in <em>Types of preregistration</em> section). Thanks to approvment of preregistration proposal, regardless of the results, the journal provides publication of the results regardless of whether they confirmed the hypothesis, or not. It also allows you to improve the registered report thanks to reviewer’s comments before the data collection process begins.</p>
-<ol class="arabic simple" start="7">
-<li><p><strong>Preregistration can shield you from post hoc critique.</strong></p></li>
-</ol>
-<p>Repetitive research must include the complete history and narrative of the project planning and development process. This includes information about the data, tools, methods, codes and documentation used in the research project. By keeping a complete history of our work, we can ensure the durability of the research, the reliable citation / recognition, and the usefulness of our and other work in our research fields. Preregistration protects the researcher from the influence of unwanted factors such as hidden moderator, inadequate manipulation check, different instruction and others. If you allow reviewers to take look at your plan of research, you will have it checked by scientists from your field.</p>
-<div class="section" id="data-sharing-process">
-<h3>Data sharing process<a class="headerlink" href="#data-sharing-process" title="Permalink to this headline">¶</a></h3>
-<p>Open data availability makes it possible to verify the accuracy of published findings - publicly available data are exposing fewer statistical errors, (Witchers et al. 2011) - and encourages researchers to conduct innovative analyzes. In our case, the whole process is simplified as neuroimaging uses an entirely digital data generation process.</p>
-<p>Optimism about propaging reproducible science is challenged by the increasingly complex ethical, legal and social issues it raises. Reporting of scientific methods is no longer sufficient to address the complex relationship between science and society.</p>
-</div>
-</div>
-<div class="section" id="ethical-approval">
-<h2>Ethical Approval<a class="headerlink" href="#ethical-approval" title="Permalink to this headline">¶</a></h2>
-<p>If we want to apply for approval from an ethical review board to conduct and share brain imaging data, we have to include the study protocol, a patient or participant information letter, a consent form, and some extra information.</p>
-<p>Thus, the 1st step is to <strong>plan data sharing</strong>, which is associated with the ethical approval of the respondent before starting the research procedure. Brain imaging data allows singling out individuals, which is a prerequisite to identification because of sensitive personal data so, thus it is safe to consider them as ‘personal data’.</p>
-<p>We encourage every researcher to use the developed format put together in documentation thank to <a class="reference external" href="https://open-brain-consent.readthedocs.io/en/stable/index.html">Open Brain Consent</a> project, which contribute templates possible to insert into existing <strong>consent form</strong> after minor adjustments. To see ultimate consent forms you can use to your research, <a class="reference external" href="https://open-brain-consent.readthedocs.io/en/latest/ultimate.html">go here</a>.</p>
-</div>
-<div class="section" id="data-user-agreement">
-<h2>Data User Agreement<a class="headerlink" href="#data-user-agreement" title="Permalink to this headline">¶</a></h2>
-<p>Data User Agreement for accessing identifiable human data, specifies how to deal with subject confidentiality issues. Once again, Open Brain Consent allows using the example of such an agreement which is <a class="reference external" href="usingthemodelofsuchanagreement">available here</a> in couple translations. The researcher is “nominated” to be <strong>the data controller</strong> who is determining the purposes for which and the means by which personal data is processed.</p>
-<p>What’s more, a Data User Agreement helps researchers to have access to the data even outside of Europe.</p>
-</div>
-<div class="section" id="anonymization-process">
-<h2>Anonymization Process<a class="headerlink" href="#anonymization-process" title="Permalink to this headline">¶</a></h2>
-<p>There are some tools which allow researchers to strip out ‘personal data’. Open Brain Consent presents couple of solutions such as:</p>
-<ul>
-<li><p><strong>to sanitize the headers/filenames</strong>:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><a class="reference external" href="https://www.nitrc.org/projects/de-identification">DeID</a> is a Java program which allows users to remove identifying information in neuroimaging datasets, while still maintaining the association among different data types from the same subject for further studies;</p></li>
-<li><p><a class="reference external" href="https://github.com/pydicom/pydicom">PyDICOM’s deid</a> is a Python module intended for basic coding of medical images, which means “cleaning” image headers and pixel data, and integrating with your own functions to replace with anonymous identifiers;</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p><strong>to skull stripping</strong>:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><a class="reference external" href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/BET/UserGuide">BET</a> is the command-line script which deletes non-brain tissue from an image of the whole head;</p></li>
-<li><p><a class="reference external" href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation">FSL</a> is a comprehensive library of analysis tools for FMRI, MRI and DTI brain imaging data;</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p><strong>to faces/dental stripping</strong>:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><a class="reference external" href="https://github.com/poldracklab/pydeface">PyDeface</a> is a tool to remove facial structure from MRI images;</p></li>
-<li><p><a class="reference external" href="https://github.com/mih/mridefacer">mridefacer</a> aligns template mask to the input image and it requires FSL and the environment variable FSLDIR to be set accordingly.</p></li>
-</ul>
-</div></blockquote>
-</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The researcher is obliged to remove all identifying information before sharing the data for research purposes, including full face photographic images and all comparable images, from human subject scans.</p>
-</div>
-</div>
-<div class="section" id="open-data-sharing-platforms">
-<h2>Open Data Sharing Platforms<a class="headerlink" href="#open-data-sharing-platforms" title="Permalink to this headline">¶</a></h2>
-<p>The 2nd step is a submission to a repository before publishing an article allows the author to indicate to readers and reviewers the specific location of the collected data. The data itself may be used for other research in the future.</p>
-<p>There is an widespread repository in the research community accepting data from human neuroimaging:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="http://openfmri.org/">OpenfMRI</a> platform dedicated to the free and open sharing of raw magnetic resonance imaging (MRI) datasets;</p></li>
-<li><p><a class="reference external" href="https://openneuro.org/">OpenNeuro</a> is a platform which accepts datasets which we can upload via our command-line utility tool.</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Every database stored to this repository conforms to the BIDS data organization scheme. It is also important that these open data sharing platforms do not accept datasets that have not been defaced for privacy considerations and do not contain consent forms.</p>
-</div>
-</div>
-<div class="section" id="attach-a-license">
-<h2>Attach a License<a class="headerlink" href="#attach-a-license" title="Permalink to this headline">¶</a></h2>
-<p>Data is processed differently by the legal system than creative works, therefore they require special licenses.</p>
-<p>Major scientific institutions recommend using an unrestricted Public Domain license such as <strong>CC0</strong> which has universal form and it may be used throughout the world for any kind of content without adaptation to account for laws in different jurisdictions. To see more information, <a class="reference external" href="https://creativecommons.org/share-your-work/public-domain/cc0/">click here</a>.</p>
-<div class="section" id="get-your-data">
-<h3>Get your data<a class="headerlink" href="#get-your-data" title="Permalink to this headline">¶</a></h3>
-<p><strong>DataLad</strong> is a software tool designed to help with anything related to the evolution of digital objects, there is no more excuse for lack of reproducibility anymore.</p>
-</div>
-</div>
-<div class="section" id="basics">
-<h2>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="prepare-your-data">
-<h3>Prepare your data<a class="headerlink" href="#prepare-your-data" title="Permalink to this headline">¶</a></h3>
-<p>For many years, the research community has been trying to find a way to effectively store and manage the data collected from the fMRI scanner.  Neuroimaging experiments involve a complex set of data that can be organized in many different ways.</p>
-</div>
-</div>
-<div class="section" id="brain-imaging-data-structure">
-<h2>Brain Imaging Data Structure<a class="headerlink" href="#brain-imaging-data-structure" title="Permalink to this headline">¶</a></h2>
-<p><em>Brain Imaging Data Structure</em> (<strong>BIDS</strong>) was originally designed to describe and apply consistent naming conventions to raw data (Gorgolewski et al., 2016). Derivatives of the raw data (other than products of DICOM to NIfTI conversion) MUST be kept separate from the raw data. This way one can protect the raw data from accidental changes by file permissions.</p>
-<ul class="simple">
-<li><p>Where a data file has been collected in a session from a given subject, the name of the filename must start with the string <code class="docutils literal notranslate"><span class="pre">sub-&lt;label&gt;_ses-&lt;label&gt;</span></code>.</p></li>
-<li><p>If the session level is omitted from the folder structure, the filename must begin with the <code class="docutils literal notranslate"><span class="pre">sub-&lt;label&gt;</span></code>, without the <code class="docutils literal notranslate"><span class="pre">ses-&lt;label&gt;</span></code>.</p></li>
-</ul>
-<p><code class="docutils literal notranslate"><span class="pre">sub-&lt;label&gt;</span></code> corresponds to an entity, where <code class="docutils literal notranslate"><span class="pre">&lt;label&gt;</span></code> in the real feed would correspond to that entity’s unique identifier, for example <em>01</em>. The same goes for a session entity with its <code class="docutils literal notranslate"><span class="pre">ses-</span></code> key and <code class="docutils literal notranslate"><span class="pre">&lt;label&gt;</span></code> value.</p>
-<img alt="Alternative text" class="align-center" src="_images/dataset_structure.webp" />
-<hr class="docutils" />
-<p><em>Figure 1.</em> Illustration of a BIDS structured dataset.: BIDS is a format for standardizing and describing outputs of neuroimaging experiments (left) in a way that is intuitive to understand and easy to use with existing analysis tools (right).</p>
-<p>(Gorgolewski et al., 2016a)</p>
-<p>To understand the organization of files and their format, just refer to the <a class="reference external" href="https://bids-specification.readthedocs.io/en/stable/02-common-principles.html">BIDS documentation</a>.</p>
-</div>
-<div class="section" id="create-a-bids-compatible-dataset">
-<h2>Create a BIDS compatible dataset<a class="headerlink" href="#create-a-bids-compatible-dataset" title="Permalink to this headline">¶</a></h2>
-<p>The whole process of creating a BIDS compatible dataset was described by the authors (Gorgolewski et al. 2016) and mapped below for information purposes.</p>
-<ol class="arabic simple">
-<li><p><strong>Convert DICOM files to NIfTI</strong></p></li>
-</ol>
-<a class="reference internal image-reference" href="_images/bidsyfing.png"><img alt="Alternative text" class="align-center" src="_images/bidsyfing.png" style="width: 205.60000000000002px; height: 47.6px;" /></a>
-<p>Usually the datasets are acquired using an MRI scanner that outputs DICOM files so we can use a DICOM to NIfTI converter such as dcm2niix. The software is an open source and it should run on macOS, Linux and Windows, typically without requiring any other software. To get more specific information, <a class="reference external" href="https://github.com/rordenlab/dcm2niix">go here</a>.</p>
-<ol class="arabic simple" start="2">
-<li><p><strong>Create folder structure</strong></p></li>
-</ol>
-<p>BIDS relies on a particular folder structure and naming scheme of files. We start with creating the folder structure with creating one subfolder for each participant named ‘sub-01’, ‘sub-02’ and so on. Inside each of these we create subfolders such as: ‘anat’ for anatomical scans, ‘dwi’ (for diffusion scans),‘func’ (for task fMRI) and ‘fmap’ for field mapping. After creating the base, we have to move specific scans to an accurate folder and rename it.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>sub-01
-    ∟ anat
-     #data type
-       ∟ sub-01_run-01_Tww.nii.gz
-        #entities, suffix and exntension
-</pre></div>
-</div>
-<p>Every name has to be renamed following the BIDS standard. See more information <a class="reference external" href="https://github.com/bids-standard/bids-starter-kit/wiki/The-BIDS-folder-hierarchy">here</a>.</p>
-<ol class="arabic simple" start="3">
-<li><p><strong>Add remaining data</strong></p></li>
-</ol>
-<p>We need to provide details on the experimental paradigm for modality-specific files. To see possibilities, <a class="reference external" href="https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/01-magnetic-resonance-imaging-data.html">go here</a>.</p>
-<p>BIDS aspires to describe a majority of datasets, but acknowledges that there will be cases that do not fit the present version of BIDS.</p>
-<ol class="arabic simple" start="4">
-<li><p><strong>Add missing metadata</strong></p></li>
-</ol>
-<p>There is a need to provide the name of each task, but it is optional to add additional information such as task instructions and description. Although, it is recommended to include external ontology such as <a class="reference external" href="https://www.cognitiveatlas.org/">Cognitive Atlas</a> or <a class="reference external" href="http://www.cogpo.org/">Cognitive Paradigm Ontology</a> to clarify research purposes.</p>
-<ol class="arabic simple" start="5">
-<li><p><strong>Validate the dataset</strong></p></li>
-</ol>
-<p><strong>BIDS Validator</strong> has been developed to easily check whether a dataset accurately follows the BIDS standard. Once the dataset is organized into BIDS format, the BIDS Validator can be used to check if any of the required or recommended metadata are missing.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We recommend using the Web version with no need to install additional software which requires two steps:</p>
-<ul class="simple">
-<li><p>Open Google Chrome or Mozilla Firefox (the only supported browsers).</p></li>
-<li><p>Go to <a class="reference external" href="https://bids-standard.github.io/bids-validator/">BIDS Validator</a> and select a folder with BIDS dataset.</p></li>
-<li><p>If the validator seems to be working longer than a couple of minutes, open developer tools and report the error in the <a class="reference external" href="https://github.com/bids-standard/bids-validator/issues">designated place</a>.</p></li>
-</ul>
-</div>
-<p>The validator works in the browser performs the validation on the client side (no data is uploaded or shared) so it is suitable for sensitive datasets that are not intended for public sharing.</p>
 </div>
 </div>
 

@@ -1,13 +1,15 @@
-*********************
-Prepare your data
-*********************
+==================
+Data structure
+==================
 
 For many years, the research community has been trying to find a way to effectively store and manage the data collected from the fMRI scanner.  Neuroimaging experiments involve a complex set of data that can be organized in many different ways. 
 
 Brain Imaging Data Structure
 -----------------------------
 
-*Brain Imaging Data Structure* (**BIDS**) was originally designed to describe and apply consistent naming conventions to raw data (Gorgolewski et al., 2016). Derivatives of the raw data (other than products of DICOM to NIfTI conversion) MUST be kept separate from the raw data. This way one can protect the raw data from accidental changes by file permissions. 
+*Brain Imaging Data Structure* (**BIDS**) was originally designed to describe and apply consistent naming conventions to raw data (Gorgolewski et al., 2016). 
+Derivatives of the raw data (other than products of DICOM to NIfTI conversion) MUST be kept separate from the raw data. 
+This way one can protect the raw data from accidental changes by file permissions. 
 
 * Where a data file has been collected in a session from a given subject, the name of the filename must start with the string ``sub-<label>_ses-<label>``.
 
@@ -21,9 +23,8 @@ Brain Imaging Data Structure
 
 --------------------------------------------
 
-*Figure 1.* Illustration of a BIDS structured dataset.: BIDS is a format for standardizing and describing outputs of neuroimaging experiments (left) in a way that is intuitive to understand and easy to use with existing analysis tools (right). 
-
-(Gorgolewski et al., 2016a)
+*Figure 1.* Illustration of a BIDS structured dataset.: BIDS is a format for standardizing and describing outputs of neuroimaging experiments, 
+as you can see on the left, in a way that is intuitive to understand and easy to use with existing analysis tools, on the right. (Gorgolewski et al., 2016a)
 
 To understand the organization of files and their format, just refer to the `BIDS documentation <https://bids-specification.readthedocs.io/en/stable/02-common-principles.html>`_.
 
@@ -39,11 +40,15 @@ The whole process of creating a BIDS compatible dataset was described by the aut
    :align: center
    :alt: Alternative text
 
-Usually the datasets are acquired using an MRI scanner that outputs DICOM files so we can use a DICOM to NIfTI converter such as dcm2niix. The software is an open source and it should run on macOS, Linux and Windows, typically without requiring any other software. To get more specific information, `go here <https://github.com/rordenlab/dcm2niix>`_.
+Usually the datasets are acquired using an MRI scanner that outputs DICOM files so we can use a DICOM to NIfTI converter such as dcm2niix. 
+The software is an open source and it should run on macOS, Linux and Windows, typically without requiring any other software. To get more specific information, `go here <https://github.com/rordenlab/dcm2niix>`_.
 
 2. **Create folder structure**
 
-BIDS relies on a particular folder structure and naming scheme of files. We start with creating the folder structure with creating one subfolder for each participant named ‘sub-01’, ‘sub-02’ and so on. Inside each of these we create subfolders such as: ‘anat’ for anatomical scans, ‘dwi’ (for diffusion scans),‘func’ (for task fMRI) and ‘fmap’ for field mapping. After creating the base, we have to move specific scans to an accurate folder and rename it.
+BIDS relies on a particular folder structure and naming scheme of files. 
+We start with creating the folder structure with creating one subfolder for each participant named ‘sub-01’, ‘sub-02’ and so on. 
+Inside each of these we create subfolders such as: ‘anat’ for anatomical scans, ‘dwi’ (for diffusion scans),‘func’ (for task fMRI) and ‘fmap’ for field mapping. 
+After creating the base, we have to move specific scans to an accurate folder and rename it.
 
 ::
 
@@ -53,21 +58,26 @@ BIDS relies on a particular folder structure and naming scheme of files. We star
            ∟ sub-01_run-01_Tww.nii.gz
             #entities, suffix and exntension
 
-Every name has to be renamed following the BIDS standard. See more information `here <https://github.com/bids-standard/bids-starter-kit/wiki/The-BIDS-folder-hierarchy>`_.
+Every name has to be renamed following the BIDS standard. 
+See more information `here <https://github.com/bids-standard/bids-starter-kit/wiki/The-BIDS-folder-hierarchy>`_.
 
 3. **Add remaining data**
 
-We need to provide details on the experimental paradigm for modality-specific files. To see possibilities, `go here <https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/01-magnetic-resonance-imaging-data.html>`_.
+We need to provide details on the experimental paradigm for modality-specific files. To see possibilities, 
+`go here <https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/01-magnetic-resonance-imaging-data.html>`__.
 
 BIDS aspires to describe a majority of datasets, but acknowledges that there will be cases that do not fit the present version of BIDS. 
 
 4. **Add missing metadata**
 
-There is a need to provide the name of each task, but it is optional to add additional information such as task instructions and description. Although, it is recommended to include external ontology such as `Cognitive Atlas <https://www.cognitiveatlas.org/>`_ or `Cognitive Paradigm Ontology <http://www.cogpo.org/>`_ to clarify research purposes.  
+There is a need to provide the name of each task, but it is optional to add additional information such as task instructions and description. 
+Although, it is recommended to include external ontology such as `Cognitive Atlas <https://www.cognitiveatlas.org/>`_ or 
+`Cognitive Paradigm Ontology <http://www.cogpo.org/>`_ to clarify research purposes.  
 
 5. **Validate the dataset**
 
-**BIDS Validator** has been developed to easily check whether a dataset accurately follows the BIDS standard. Once the dataset is organized into BIDS format, the BIDS Validator can be used to check if any of the required or recommended metadata are missing.
+**BIDS Validator** has been developed to easily check whether a dataset accurately follows the BIDS standard. 
+Once the dataset is organized into BIDS format, the BIDS Validator can be used to check if any of the required or recommended metadata are missing.
 
 .. note:: We recommend using the Web version with no need to install additional software which requires two steps:
 
@@ -77,4 +87,5 @@ There is a need to provide the name of each task, but it is optional to add addi
 
     * If the validator seems to be working longer than a couple of minutes, open developer tools and report the error in the `designated place <https://github.com/bids-standard/bids-validator/issues>`_.
 
-The validator works in the browser performs the validation on the client side (no data is uploaded or shared) so it is suitable for sensitive datasets that are not intended for public sharing. 
+The validator works in the browser performs the validation on the client side (no data is uploaded or shared) 
+so it is suitable for sensitive datasets that are not intended for public sharing. 

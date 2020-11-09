@@ -6,10 +6,7 @@
 Guide to reproducible neuroimaging
 =====================================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
+.. include:: ../README.rst
 
 Contents
 --------
@@ -22,11 +19,3 @@ Contents
    data-sharing
    datalad
    bids
-
-
-.. include:: ../../README.rst
-.. include:: introduction.rst
-.. include:: preregistration.rst
-.. include:: data-sharing.rst
-.. include:: datalad.rst
-.. include:: bids.rst
