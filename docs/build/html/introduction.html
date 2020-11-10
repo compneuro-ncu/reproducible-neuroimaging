@@ -37,7 +37,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Preregistration" href="preregistration.html" />
-    <link rel="prev" title="Guide to reproducible neuroimaging" href="index.html" /> 
+    <link rel="prev" title="Guide to reproducible neuroimaging research" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -163,32 +163,40 @@
   <div class="section" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
 <p>The progress of science is based on valuable research.
-While reading the research paper you naturally trust the researchers that the presented results are true and that you can build your research upon them.
+While reading the research paper you naturally trust the researchers
+that the presented results are true and that you can build your research upon them.
 Recent reports show, however, that scientists are not able to reproduce a large amount of published research.
-In this section we introduce you to the concept of reproducibility in research, reasons of reproducibility crisis, and motivations to lead reproducible research.
+In this section we introduce you to the concept of reproducibility in research, reasons of reproducibility crisis,
+and motivations to lead reproducible research.
 Finally, we present you three steps that might improve reproducibility in your research.</p>
 <div class="section" id="reproducibility-in-science">
 <h2>Reproducibility in science<a class="headerlink" href="#reproducibility-in-science" title="Permalink to this headline">¶</a></h2>
 <p>The goal of scientific research is to build reliable knowledge.
-To approach this, scientists should be able to repeat the analysis and replicate findings of other researchers.
-The individual research should be transparent and well documented so it can be verified by other scientists.</p>
-<p><strong>Reproducibility</strong> stands for “obtaining consistent results using the same input data, computational steps, methods, and code, and conditions of analysis”.
-It is also important to distinguish the reproducibility from <strong>replicability</strong> that stands for “obtaining consistent results across studies aimed at answering the same scientific question, each of which has obtained its own data” [NAS, 2018].
-In contrast, the term <strong>robustness</strong> of research means that you can obtain consistent results using the same data but different analyses
+Thus, individual research should be transparent and well documented so other scientists
+can verify or reproduce its findings.</p>
+<p><strong>Reproducibility</strong> stands for “obtaining consistent results using the same input data, computational steps, methods,
+and code, and conditions of analysis”.
+It is also important to distinguish reproducibility from <strong>replicability</strong> that stands for
+“obtaining consistent results across studies aimed at answering the same scientific question,
+each of which has obtained its own data” (<a class="reference external" href="https://cra.org/crn/2019/06/nas-report-on-reproducibility-and-repeatability-in-science/">NAS, 2018</a>).
+In contrast, the term <strong>robustness</strong> of research means that you can obtain consistent results using the same data but different analyses.
 Finally,  <strong>generalizability</strong> of research means that you can obtain consistent results using different data and analysis.</p>
 <img alt="Alternative text" class="align-center" src="_images/39-reproducible-replicable-robust-generalisable.jpg" />
-<p>This image was created by Scriberia for The Turing Way community and is used under a CC-BY licence. The image was obtained from <a class="reference external" href="https://zenodo.org/record/3332808">https://zenodo.org/record/3332808</a>.</p>
+<p>This image was created by Scriberia for The Turing Way community and is used under a CC-BY licence.
+The image was obtained from <a class="reference external" href="https://zenodo.org/record/3332808">https://zenodo.org/record/3332808</a>.</p>
 </div>
 <div class="section" id="reproducibility-crisis">
 <h2>Reproducibility crisis<a class="headerlink" href="#reproducibility-crisis" title="Permalink to this headline">¶</a></h2>
 <p>Intuitively, the published research results should be reliable and trustworthy.
-Recent alarming reports showed that it is difficult to reproduce or replicate results in various medical, life and behavioural sciences (Open Science Collaboration, OSC 2015). According to Stanford Encyclopedia of Philosophy, evidence suggesting that we face reproducibility crisis include:</p>
+Recent alarming reports showed that it is difficult to reproduce or replicate results in various medical,
+life and behavioural sciences (<a class="reference external" href="https://osf.io/82fth/">Open Science Collaboration, 2015</a>).
+According to <a class="reference external" href="https://plato.stanford.edu/">Stanford Encyclopedia of Philosophy</a>, evidence suggesting that we face reproducibility crisis include:</p>
 <ul class="simple">
-<li><p>absence of replication studies in the published literature in many scientific fields (e.g., Makel, Plucker, &amp; Hegarty 2012),</p></li>
-<li><p>failure to reproduce results of published studies in large systematic replication projects (e.g., OSC 2015; Begley &amp; Ellis 2012),</p></li>
-<li><p>evidence of publication bias (Fanelli 2010a),</p></li>
-<li><p>a high prevalence of “questionable research practices”, which inflate the rate of false positives in the literature (Simmons, Nelson, &amp; Simonsohn 2011; John, Loewenstein, &amp; Prelec 2012; Agnoli et al. 2017; Fraser et al. 2018), and</p></li>
-<li><p>the documented lack of transparency and completeness in the reporting of methods, data and analysis in scientific publication (Bakker &amp; Wicherts 2011; Nuijten et al. 2016).</p></li>
+<li><p>absence of replication studies in the published literature in many scientific fields (e.g., <a class="reference external" href="https://journals.sagepub.com/doi/full/10.1177/1745691612460688">Makel et al., 2012</a>),</p></li>
+<li><p>failure to reproduce results of published studies in large systematic replication projects (<a class="reference external" href="https://www.nature.com/articles/483531a">Begley &amp; Ellis, 2012</a>),</p></li>
+<li><p>evidence of publication bias (<a class="reference external" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0010068">Fanelli, 2010</a>),</p></li>
+<li><p>a high prevalence of “questionable research practices”, which inflate the rate of false positives in the literature (<a class="reference external" href="https://journals.sagepub.com/doi/10.1177/0956797611417632">Simmons et al., 2011</a>; <a class="reference external" href="https://journals.sagepub.com/doi/10.1177/0956797611430953">John et al., 2012</a>; <a class="reference external" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0200303">Fraser et al. 2018</a>), and</p></li>
+<li><p>the documented lack of transparency and completeness in the reporting of methods, data and analysis in scientific publication (<a class="reference external" href="https://psycnet.apa.org/record/2011-21469-006">Bakker &amp; Wicherts, 2011</a>).</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/5-signs-of-reproducibility-crisis.png"><img alt="Alternative text" class="align-center" src="_images/5-signs-of-reproducibility-crisis.png" style="width: 500px;" /></a>
 </div>
@@ -198,32 +206,57 @@ Recent alarming reports showed that it is difficult to reproduce or replicate re
 </div>
 <div class="section" id="motivations-for-reproducible-research">
 <h2>Motivations for reproducible research<a class="headerlink" href="#motivations-for-reproducible-research" title="Permalink to this headline">¶</a></h2>
-<p>If scientists study phenomena that are ubiquitous in the world, there should be no contraindications for the research and the articles published on their basis to be available to everyone. That is why reproducible science encourages researchers to:</p>
-<ul class="simple">
+<p>If scientists study phenomena that are ubiquitous in the world,
+there should be no contraindications for the research and the articles published on
+their basis to be available to everyone. That is why reproducible science encourages researchers to:</p>
+<ul>
 <li><p><strong>create open access platforms</strong>, tools and services for researchers and students to make data suitable for re-analysis,</p></li>
 <li><p><strong>share the process of creating knowledge</strong> (real science is not only about published articles, but also the steps behind the creation of an article),</p></li>
-<li><p><strong>promote science available to everyone</strong> interested (thanks to open repositories).</p></li>
+<li><p><strong>promote science available to everyone</strong> interested (thanks to open repositories).</p>
+<blockquote>
+<div><p>For many scientists who already have a lot of experience and established patterns,
+it is certainly not easy to start new practices of using specific platforms (improving the entire research process,
+but only after we learn how to use them).
+This guide aims to introduce resources to help you create reproducible neuroimaging research.
+Reproducible research brings many benefits to the entire research community.
+Nowadays, open research practices are becoming more popular in the academic community,
+as evidenced by the results of metastudy (<a class="reference external" href="https://elifesciences.org/articles/16800">Mckiernan et al. 2016</a>),
+which show that open access articles are cited more frequently.</p>
+</div></blockquote>
+</li>
 </ul>
-<p>For many scientists who already have a lot of experience and established patterns, it is certainly not easy to start new practices of using specific platforms (improving the entire research process, but only after we learn how to use them). This guide aims to introduce resources to help you create reproducible neuroimaging research. Reproducible research brings many benefits to the entire research community. Nowadays, open research practices are becoming more popular in the academic community, as evidenced by the results of metastudy (<a class="reference external" href="https://elifesciences.org/articles/16800">Mckiernan et al. 2016</a>), which show that open access articles are cited more frequently.</p>
 <img alt="Alternative text" class="align-center" src="_images/open_access.jpg" />
-<p>Open research aims to transform research by making it more reproducible, transparent, reusable, collaborative, accountable and accessible to society. Reproducibility forces changes in the way research is conducted and disseminated using digital tools in the form of open science - the practice of publishing “primary results of publicly funded research - publications and research data.</p>
+<p>Open research aims to transform research by making it more reproducible, transparent, reusable, collaborative,
+accountable and accessible to society. Reproducibility forces changes in the way research is conducted and disseminated using digital tools in the form of open science - the practice of publishing “primary results of publicly funded research - publications and research data.</p>
 </div>
 <div class="section" id="three-steps-to-more-reproducible-research">
 <h2>Three steps to more reproducible research<a class="headerlink" href="#three-steps-to-more-reproducible-research" title="Permalink to this headline">¶</a></h2>
-<p>The goal of this handbook is to guide you through essential research practices that will increase reproducibility in your neuroimaging research.
-For simplicity, we divided this material into 3 steps: (1) share your research plan, (2) share your data, and (3) share your code.</p>
-<ul class="simple">
-<li><p><strong>Step 1: Share your research plan</strong></p></li>
+<p>The goal of this handbook is to guide you through essential research practices
+that will increase reproducibility in your neuroimaging research.
+For simplicity, we divided this material into 3 steps: (1) share your research plan,
+(2) organize and share your data, and (3) organize and share your code.</p>
+<ul>
+<li><p><strong>Step 1: Share your research plan</strong></p>
+<blockquote>
+<div><p>Here we guide you on what you should know before starting collecting your data
+and/or performing a new data analysis. We introduce you to concepts of pre-registration and pre-registered reports.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Step 2: Organize and share your data</strong></p>
+<blockquote>
+<div><p>Here we help you to set up your data management plan,
+structure and name your project files, and share your data in open repositories.
+We introduce you to Brain Imaging Data Structure (BIDS) formatting and controlling versions of your data with DataLad.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Step 3: Organize and share your code</strong></p>
+<blockquote>
+<div><p>Here we explain how to create a reproducible data analysis workflow.
+We introduce you to concepts of version control (Git/GitHub), containers (Docker),
+and good practices for coding and documenting your analysis.</p>
+</div></blockquote>
+</li>
 </ul>
-<p>Here we guide you on what you should know before starting collecting your data and/or performing a new data analysis. We introduce you to concepts of pre-registration and pre-registered reports.</p>
-<ul class="simple">
-<li><p><strong>Step 2: Share your data</strong></p></li>
-</ul>
-<p>Here we help you to set up your data management plan, structure and name your project files, and share your data in open repositories.. We introduce you to Brain Imaging Data Structure (BIDS) formatting and controlling versions of your data with DataLad.</p>
-<ul class="simple">
-<li><p><strong>Step 3: Share your code</strong></p></li>
-</ul>
-<p>Here we explain how to create a reproducible data analysis workflow. We introduce you to concepts of version control (Git/GitHub), containers (Docker), and good practices for coding and documenting your analysis.</p>
 </div>
 </div>
 
@@ -238,7 +271,7 @@ For simplicity, we divided this material into 3 steps: (1) share your research p
         <a href="preregistration.html" class="btn btn-neutral float-right" title="Preregistration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Guide to reproducible neuroimaging" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Guide to reproducible neuroimaging research" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
