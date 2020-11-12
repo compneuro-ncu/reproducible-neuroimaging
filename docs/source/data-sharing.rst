@@ -28,7 +28,7 @@ Moreover, you have to include the additional consent form,
 where study participants agree to share their data publicly.  
 
 We encourage every researcher to use the `ultimate consent form template <https://open-brain-consent.readthedocs.io/en/latest/ultimate.html>`_
-put together in documentation thank to `Open Brain Consent <https://open-brain-consent.readthedocs.io/en/stable/index.html>`_ project.
+put together in documentation thanks to the `Open Brain Consent <https://open-brain-consent.readthedocs.io/en/stable/index.html>`_ project.
 
 Data user agreement 
 ------------------------
@@ -36,7 +36,7 @@ Data user agreement
 **Data User Agreement** specifies how to deal with subject confidentiality issues when accessing identifiable human data.
 Once again, Open Brain Consent provides us a `template <https://open-brain-consent.readthedocs.io/en/stable/gdpr/data_user_agreement.html>`_  for such agreement. 
 The researcher signing the agreement obliges to be **the data controller** who determines the purposes for which and how personal data is processed.
-Additionally, a Data User Agreement helps the researchers to access the data even outside of Europe.
+Additionally, a data user agreement helps the researchers to access the data even outside of Europe.
 
 Anonymization process
 ---------------------------
@@ -45,7 +45,6 @@ The raw neuroimaging data contain the personal data that can be used to identify
 (data headers, facial/skull structure). 
 Thus, before sharing the data in a public repository, 
 you have to process your data to ensure proper anonymization.
-
 
 Open Brain Consent lists a several tools that allow researchers to strip out personal data:
 

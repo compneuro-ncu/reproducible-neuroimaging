@@ -10,6 +10,7 @@ Preregistration
 **Preregistration** is the practice of registering your detailed research plan before conducting a study.
 The **preregistered report** format requires researchers to submit a description of the confirmatory hypotheses,
 variables, study methods, and analysis plan prior to data collection.
+
 This practice allows researchers to circumvent the publication bias toward significant
 findings and prevent the data from taking you hostage.
 Preregistration also makes the distinction between hypothesis testing and exploratory (hypothesis generating) research more clear. As a result, the obtained results won’t affect the hypothesis and vice versa.
@@ -54,7 +55,7 @@ To illustrate the preregistration process, we created a simple example of the wh
 fMRI research template
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-To be more specific and for the purposes of this documentation, we extract a **preregistration report specifiaclly for fMRI research**, 
+To be more specific and for the purposes of this documentation, we extract a **preregistration report specifically for fMRI research**, 
 by `clicking here <https://osf.io/6juft/>`_ (Flannery, 2020).
 
 .. image:: img/fmri_prereg.png
@@ -64,7 +65,7 @@ by `clicking here <https://osf.io/6juft/>`_ (Flannery, 2020).
    :align: left
    :alt: Alternative text
    
-Any solution put in following template selected by the author is a suggestion of practices for reported fMRI methos put forth by Nichols et al., 
+Any solution put in following template selected by the author is a suggestion of practices for reported fMRI methods put forth by Nichols et al., 
 2016 & Poldrack et al., 2008. The whole documentation is available on GitHub so everyone can contribute and improve the whole statement.
 
 
@@ -77,7 +78,7 @@ Rules of preregistration
 2. **Report the results of ALL preregistered analyses regardless of outcome**.  
 
 3. **ANY unregistered analyses must be transparently reported as exploratory finding.**
-   Do not stop yourself before make transparent changes to analysis plan
+   Do not stop yourself before making transparent changes to the analysis plan
    but remember to report the change and its substantive justification.
 
 
