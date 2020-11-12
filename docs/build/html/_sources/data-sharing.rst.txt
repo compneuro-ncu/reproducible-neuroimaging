@@ -2,40 +2,52 @@
 Data sharing 
 ===============
 
-Open data availability makes it possible to verify the accuracy of published findings - publicly available data are exposing fewer statistical errors, (Witchers et al. 2011) - and encourages researchers to conduct innovative analyzes. In our case, the whole process is simplified as neuroimaging uses an entirely digital data generation process. 
+Reporting details about your scientific methods is no longer sufficient to address 
+the complex relationship between science and society. 
+More and more funding bodies require scientists to make their data public after the end of the study. 
+Sharing data in open repositories enables other scientists to reuse your data to answer their research question 
+or to develop new analysis techniques. 
+As a result, society could benefit as much as possible from carrying every single scientific project. 
 
-Optimism about propaging reproducible science is challenged by the increasingly complex ethical, legal and social issues it raises. Reporting of scientific methods is no longer sufficient to address the complex relationship between science and society.
+Optimism about propagating reproducible science is challenged by the complex ethical, 
+legal, and social issues it raises. 
+Here, we list some conditions you have to fulfill before putting your neuroimaging data into a public repository. 
 
 
 Ethical approval
 -----------------
 
-If we want to apply for approval from an ethical review board to conduct and share brain imaging data, 
-we have to include the study protocol, a patient or participant information letter, a consent form, and some extra information. 
+In case you want to collect neuroimaging data for your project, you first have to apply for study approval 
+from the local ethical committee. 
+In the application, you have to include the study protocol, a patient or participant information letter, 
+a consent form, and some extra information. 
 
-Thus, the 1st step is to **plan data sharing**, which is associated with the ethical approval of the respondent before starting the research procedure. 
-Brain imaging data allows singling out individuals, which is a prerequisite to identification because of sensitive personal data so, 
-thus it is safe to consider them as ‘personal data’.
+If you plan to share your data in a **public repository**, 
+you must write this explicitly in your application to the ethical board. 
+Moreover, you have to include the additional consent form, 
+where study participants agree to share their data publicly.  
 
-We encourage every researcher to use the developed format put together in documentation thank 
-to `Open Brain Consent <https://open-brain-consent.readthedocs.io/en/stable/index.html>`_ project, 
-which contribute templates possible to insert into existing **consent form** after minor adjustments. 
-To see ultimate consent forms you can use to your research, `go here <https://open-brain-consent.readthedocs.io/en/latest/ultimate.html>`__.
-
+We encourage every researcher to use the `ultimate consent form template <https://open-brain-consent.readthedocs.io/en/latest/ultimate.html>`_
+put together in documentation thank to `Open Brain Consent <https://open-brain-consent.readthedocs.io/en/stable/index.html>`_ project.
 
 Data user agreement 
-====================
+------------------------
 
-Data User Agreement for accessing identifiable human data, specifies how to deal with subject confidentiality issues. 
-Once again, Open Brain Consent allows using the example of such an agreement which is `available here <using the model of such an agreement>`_ in couple translations. 
-The researcher is “nominated” to be **the data controller** who is determining the purposes for which and the means by which personal data is processed.
-
-What’s more, a Data User Agreement helps researchers to have access to the data even outside of Europe.
+**Data User Agreement** specifies how to deal with subject confidentiality issues when accessing identifiable human data.
+Once again, Open Brain Consent provides us a `template <https://open-brain-consent.readthedocs.io/en/stable/gdpr/data_user_agreement.html>`_  for such agreement. 
+The researcher signing the agreement obliges to be **the data controller** who determines the purposes for which and how personal data is processed.
+Additionally, a Data User Agreement helps the researchers to access the data even outside of Europe.
 
 Anonymization process
-======================
+---------------------------
 
-There are some tools which allow researchers to strip out ‘personal data’. Open Brain Consent presents couple of solutions such as:
+The raw neuroimaging data contain the personal data that can be used to identify your study participants 
+(data headers, facial/skull structure). 
+Thus, before sharing the data in a public repository, 
+you have to process your data to ensure proper anonymization.
+
+
+Open Brain Consent lists a several tools that allow researchers to strip out personal data:
 
 - **to sanitize the headers/filenames**:
 
@@ -57,9 +69,11 @@ There are some tools which allow researchers to strip out ‘personal data’. O
 Open data sharing platforms
 ----------------------------
 
-The 2nd step is a submission to a repository before publishing an article allows the author to indicate to readers and reviewers the specific location of the collected data. The data itself may be used for other research in the future. 
+The 2nd step is a submission to a repository before publishing an article that allows the author to 
+indicate to readers and reviewers about the specific location of the collected data. 
+The data itself may be used by other research in the future. 
 
-There is an widespread repository in the research community accepting data from human neuroimaging: 
+The repositories dedicated to sharing neuroimaging data: 
 
 * `OpenfMRI <http://openfmri.org/>`_ platform dedicated to the free and open sharing of raw magnetic resonance imaging (MRI) datasets; 
 * `OpenNeuro <https://openneuro.org/>`_ is a platform which accepts datasets which we can upload via our command-line utility tool.
@@ -71,4 +85,7 @@ Attach a license
 
 Data is processed differently by the legal system than creative works, therefore they require special licenses. 
 
-Major scientific institutions recommend using an unrestricted Public Domain license such as **CC0** which has universal form and it may be used throughout the world for any kind of content without adaptation to account for laws in different jurisdictions. To see more information, `click here <https://creativecommons.org/share-your-work/public-domain/cc0/>`__.
+Major scientific institutions recommend using an unrestricted Public Domain license such as **CC0** which has universal 
+form and it may be used throughout the world for any kind of content without adaptation to account for laws in different 
+jurisdictions. 
+See `more information <https://creativecommons.org/share-your-work/public-domain/cc0/>`_.
