@@ -95,6 +95,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="datalad.html">Data management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bids.html">Data structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code.html">Code management</a></li>
 </ul>
 
             
@@ -170,7 +171,7 @@ or to develop new analysis techniques.
 As a result, society could benefit as much as possible from carrying every single scientific project.</p>
 <p>Optimism about propagating reproducible science is challenged by the complex ethical,
 legal, and social issues it raises.
-Here, we list some conditions you have to fulfill before putting your neuroimaging data into a public repository.</p>
+Below, we provide explicit suggestions you may fulfill to change how you conduct the study, before putting your neuroimaging data into a public repository.</p>
 <div class="section" id="ethical-approval">
 <h2>Ethical approval<a class="headerlink" href="#ethical-approval" title="Permalink to this headline">¶</a></h2>
 <p>In case you want to collect neuroimaging data for your project, you first have to apply for study approval
@@ -186,9 +187,11 @@ put together in documentation thanks to the <a class="reference external" href="
 </div>
 <div class="section" id="data-user-agreement">
 <h2>Data user agreement<a class="headerlink" href="#data-user-agreement" title="Permalink to this headline">¶</a></h2>
-<p><strong>Data User Agreement</strong> specifies how to deal with subject confidentiality issues when accessing identifiable human data.
-Once again, Open Brain Consent provides us a <a class="reference external" href="https://open-brain-consent.readthedocs.io/en/stable/gdpr/data_user_agreement.html">template</a>  for such agreement.
-The researcher signing the agreement obliges to be <strong>the data controller</strong> who determines the purposes for which and how personal data is processed.
+<p>Certain data circumstances (e.g. clinical) may not be possible to share without additional protective measures,
+such as <strong>data user agreement</strong> which specifies how to deal with subject confidentiality issues when accessing identifiable human data.</p>
+<p>Once again, Open Brain Consent provides us a <a class="reference external" href="https://open-brain-consent.readthedocs.io/en/stable/gdpr/data_user_agreement.html">template</a> for such agreement.
+The agreement have an specified data management plan that clearly defines some problematic issues,
+for e.g. the researcher signing the agreement obliges to be <strong>the data controller</strong> who determines the purposes for which and how personal data is processed.
 Additionally, a data user agreement helps the researchers to access the data even outside of Europe.</p>
 </div>
 <div class="section" id="anonymization-process">
@@ -198,7 +201,8 @@ Additionally, a data user agreement helps the researchers to access the data eve
 Thus, before sharing the data in a public repository,
 you have to process your data to ensure proper anonymization.</p>
 <p>Open Brain Consent lists a several tools that allow researchers to strip out personal data:</p>
-<ul>
+<blockquote>
+<div><ul>
 <li><p><strong>to sanitize the headers/filenames</strong>:</p>
 <blockquote>
 <div><ul class="simple">
@@ -224,6 +228,7 @@ you have to process your data to ensure proper anonymization.</p>
 </div></blockquote>
 </li>
 </ul>
+</div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The researcher is obliged to remove all identifying information before sharing the data for research purposes, including full face photographic images and all comparable images, from human subject scans.</p>
@@ -231,10 +236,12 @@ you have to process your data to ensure proper anonymization.</p>
 </div>
 <div class="section" id="open-data-sharing-platforms">
 <h2>Open data sharing platforms<a class="headerlink" href="#open-data-sharing-platforms" title="Permalink to this headline">¶</a></h2>
-<p>The 2nd step is a submission to a repository before publishing an article that allows the author to
-indicate to readers and reviewers about the specific location of the collected data.
-The data itself may be used by other research in the future.</p>
-<p>The repositories dedicated to sharing neuroimaging data:</p>
+<p>Data sharing permits others to reproduce the results of a particular study in the future and it also maximizes the value of research funds already spent.
+Submission to a repository before publishing an article allows the author to indicate to readers and reviewers about the specific location of the collected data.</p>
+<p>There is a variety of data types you may want to share and at what stage they can be useful to share with collaborators or potential replication researchers.</p>
+<a class="reference internal image-reference" href="_images/data_types.png"><img alt="Alternative text" class="align-center" src="_images/data_types.png" style="width: 400px;" /></a>
+<p>We recommend the widest sharing of data possible within next steps of preprocessing and those drawing conclusions but all of those with proper description and file organization.</p>
+<p>There are two most recommended repositories dedicated to sharing neuroimaging data:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="http://openfmri.org/">OpenfMRI</a> platform dedicated to the free and open sharing of raw magnetic resonance imaging (MRI) datasets;</p></li>
 <li><p><a class="reference external" href="https://openneuro.org/">OpenNeuro</a> is a platform which accepts datasets which we can upload via our command-line utility tool.</p></li>
@@ -246,7 +253,8 @@ The data itself may be used by other research in the future.</p>
 </div>
 <div class="section" id="attach-a-license">
 <h2>Attach a license<a class="headerlink" href="#attach-a-license" title="Permalink to this headline">¶</a></h2>
-<p>Data is processed differently by the legal system than creative works, therefore they require special licenses.</p>
+<p>Data is processed differently by the legal system than creative works,
+therefore they require special licenses which ones save you a time of making clearly defined terms of use data from potential interested ones.</p>
 <p>Major scientific institutions recommend using an unrestricted Public Domain license such as <strong>CC0</strong> which has universal
 form and it may be used throughout the world for any kind of content without adaptation to account for laws in different
 jurisdictions.

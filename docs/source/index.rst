@@ -16,3 +16,4 @@ Contents
    data-sharing
    datalad
    bids
+   code
