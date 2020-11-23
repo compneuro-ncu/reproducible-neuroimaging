@@ -80,7 +80,6 @@ Submission to a repository before publishing an article allows the author to ind
 There is a variety of data types you may want to share and at what stage they can be useful to share with collaborators or potential replication researchers. 
 
 .. image:: img/data_types.png
-  :width: 400
   :align: center
   :alt: Alternative text
 
