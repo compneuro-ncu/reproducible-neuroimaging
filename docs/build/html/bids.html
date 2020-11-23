@@ -36,6 +36,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Code management" href="code.html" />
     <link rel="prev" title="Data management" href="datalad.html" /> 
 </head>
 
@@ -91,6 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#create-a-bids-compatible-dataset">Create a BIDS compatible dataset</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="code.html">Code management</a></li>
 </ul>
 
             
@@ -163,36 +165,43 @@ For many years, the research community has been trying to find a way to effectiv
 from the fMRI scanner.</p>
 <div class="section" id="brain-imaging-data-structure">
 <h2>Brain Imaging Data Structure<a class="headerlink" href="#brain-imaging-data-structure" title="Permalink to this headline">¶</a></h2>
-<p><em>Brain Imaging Data Structure</em> (<strong>BIDS</strong>) was originally designed to describe and apply consistent naming conventions to raw data (Gorgolewski et al., 2016).
-Derivatives of the raw data (other than products of DICOM to NIfTI conversion) MUST be kept separate from the raw data.
-This way one can protect the raw data from accidental changes by file permissions.</p>
-<ul class="simple">
-<li><p>Where a data file has been collected in a session from a given subject, the name of the filename must start with the string <code class="docutils literal notranslate"><span class="pre">sub-&lt;label&gt;_ses-&lt;label&gt;</span></code>.</p></li>
-<li><p>If the session level is omitted from the folder structure, the filename must begin with the <code class="docutils literal notranslate"><span class="pre">sub-&lt;label&gt;</span></code>, without the <code class="docutils literal notranslate"><span class="pre">ses-&lt;label&gt;</span></code>.</p></li>
-</ul>
-<p><code class="docutils literal notranslate"><span class="pre">sub-&lt;label&gt;</span></code> corresponds to an entity, where <code class="docutils literal notranslate"><span class="pre">&lt;label&gt;</span></code> in the real feed would correspond to that entity’s unique identifier, for example <em>01</em>. The same goes for a session entity with its <code class="docutils literal notranslate"><span class="pre">ses-</span></code> key and <code class="docutils literal notranslate"><span class="pre">&lt;label&gt;</span></code> value.</p>
+<p><em>Brain Imaging Data Structure</em> (<strong>BIDS</strong>) was originally designed to describe and apply consistent naming conventions to raw data
+(<a class="reference external" href="https://www.nature.com/articles/sdata201644">Gorgolewski et al., 2016</a>).</p>
+<p><strong>Derivatives</strong> of the raw data (other than products of DICOM to NIfTI conversion) MUST be stored separately from the raw data to protect
+the raw data from accidental changes.</p>
+<p>Structuring your data according BIDS also enables to use automatic analysis tools such as <a class="reference external" href="https://fmriprep.org/en/stable/">fMRIPrep</a> or other <a class="reference external" href="https://bids-apps.neuroimaging.io/apps/">BIDS Apps</a>.</p>
 <img alt="Alternative text" class="align-center" src="_images/dataset_structure.webp" />
 <hr class="docutils" />
-<p><em>Figure 1.</em> Illustration of a BIDS structured dataset.: BIDS is a format for standardizing and describing outputs of neuroimaging experiments,
-as you can see on the left, in a way that is intuitive to understand and easy to use with existing analysis tools, on the right. (Gorgolewski et al., 2016a)</p>
-<p>To understand the organization of files and their format, just refer to the <a class="reference external" href="https://bids-specification.readthedocs.io/en/stable/02-common-principles.html">BIDS documentation</a>.</p>
+<p><em>Figure 1.</em> From unstructured data (<em>left</em>) to a BIDS-structured dataset (<em>right</em>).</p>
+<p>To understand the organization of files and their format, refer to the <a class="reference external" href="https://bids-specification.readthedocs.io/en/stable/02-common-principles.html">BIDS documentation</a>.</p>
 </div>
 <div class="section" id="create-a-bids-compatible-dataset">
 <h2>Create a BIDS compatible dataset<a class="headerlink" href="#create-a-bids-compatible-dataset" title="Permalink to this headline">¶</a></h2>
-<p>The whole process of creating a BIDS compatible dataset was described by the authors (Gorgolewski et al. 2016) and mapped below for information purposes.</p>
+<p>Here we summarize the steps necessary to create a BIDS-compatible dataset as described by <a class="reference external" href="https://www.nature.com/articles/sdata201644">Gorgolewski et al., 2016</a>.</p>
 <ol class="arabic simple">
 <li><p><strong>Convert DICOM files to NIfTI</strong></p></li>
 </ol>
 <a class="reference internal image-reference" href="_images/bidsyfing.png"><img alt="Alternative text" class="align-center" src="_images/bidsyfing.png" style="width: 205.60000000000002px; height: 47.6px;" /></a>
-<p>Usually the datasets are acquired using an MRI scanner that outputs DICOM files so we can use a DICOM to NIfTI converter such as dcm2niix.
-The software is an open source and it should run on macOS, Linux and Windows, typically without requiring any other software. To get more specific information, <a class="reference external" href="https://github.com/rordenlab/dcm2niix">go here</a>.</p>
+<p>Data collected with an fMRI scanner are initially stored in DICOM format.
+In the first step, we have to convert our data from DICOM to NIfTI format.
+To do this, we can use <a class="reference external" href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>, which is open-source software that runs on macOS, Linux, and Windows, typically without requiring any third-party dependencies.</p>
 <ol class="arabic simple" start="2">
 <li><p><strong>Create folder structure</strong></p></li>
 </ol>
 <p>BIDS relies on a particular folder structure and naming scheme of files.
-We start with creating the folder structure with creating one subfolder for each participant named ‘sub-01’, ‘sub-02’ and so on.
-Inside each of these we create subfolders such as: ‘anat’ for anatomical scans, ‘dwi’ (for diffusion scans),‘func’ (for task fMRI) and ‘fmap’ for field mapping.
-After creating the base, we have to move specific scans to an accurate folder and rename it.</p>
+We start with creating the folder structure with one folder for each participant named ‘sub-01’, ‘sub-02’ and so on.
+When we have multiple scanning sessions, as in longitudinal fMRI studies, each subject subfolder should contain a ‘ses-&lt;label&gt;’ subfolder, where label coresponds to the ID of a session.
+Inside each subject/session folder, we create subfolders such as: ‘anat’ for anatomical scans, ‘dwi’ (for diffusion scans),‘func’ (for task fMRI) and ‘fmap’ for field mapping.
+After creating the base folder structure, we have to move specific scans to an accurate folders and rename it.</p>
+<ol class="arabic simple" start="3">
+<li><p><strong>Rename files</strong></p></li>
+</ol>
+<p>Besides organizing your folders, you have to change names of your neuroimaging data files (.nii.gz) according to BIDS convention.</p>
+<ul class="simple">
+<li><p>When data have been collected in several sessions for each subject, the name of the filename must start with the string <code class="docutils literal notranslate"><span class="pre">sub-&lt;label&gt;_ses-&lt;label&gt;</span></code>.</p></li>
+<li><p>If the session level is omitted from the folder structure, the filename must begin with the <code class="docutils literal notranslate"><span class="pre">sub-&lt;label&gt;</span></code>, without the <code class="docutils literal notranslate"><span class="pre">ses-&lt;label&gt;</span></code>.</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">sub-&lt;label&gt;</span></code> corresponds to an entity, where <code class="docutils literal notranslate"><span class="pre">&lt;label&gt;</span></code> corresponds to that entity’s unique identifier, for example <em>01</em>. The same goes for a session entity with its <code class="docutils literal notranslate"><span class="pre">ses-</span></code> key and <code class="docutils literal notranslate"><span class="pre">&lt;label&gt;</span></code> value.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>sub-01
     ∟ anat
      #data type
@@ -200,36 +209,37 @@ After creating the base, we have to move specific scans to an accurate folder an
         #entities, suffix and exntension
 </pre></div>
 </div>
-<p>Every name has to be renamed following the BIDS standard.
+<p>Every folder and file name has to be renamed following the BIDS standard.
 See more information <a class="reference external" href="https://github.com/bids-standard/bids-starter-kit/wiki/The-BIDS-folder-hierarchy">here</a>.</p>
-<ol class="arabic simple" start="3">
+<ol class="arabic simple" start="4">
 <li><p><strong>Add remaining data</strong></p></li>
 </ol>
 <p>We need to provide details on the experimental paradigm for modality-specific files. To see possibilities,
 <a class="reference external" href="https://bids-specification.readthedocs.io/en/stable/04-modality-specific-files/01-magnetic-resonance-imaging-data.html">go here</a>.</p>
 <p>BIDS aspires to describe a majority of datasets, but acknowledges that there will be cases that do not fit the present version of BIDS.</p>
-<ol class="arabic simple" start="4">
+<ol class="arabic simple" start="5">
 <li><p><strong>Add missing metadata</strong></p></li>
 </ol>
-<p>There is a need to provide the name of each task, but it is optional to add additional information such as task instructions and description.
-Although, it is recommended to include external ontology such as <a class="reference external" href="https://www.cognitiveatlas.org/">Cognitive Atlas</a> or
+<p>You have to provide the name of each task, but it is optional to add information such as task instructions and description.
+Also, it is recommended to include external ontology such as <a class="reference external" href="https://www.cognitiveatlas.org/">Cognitive Atlas</a> or
 <a class="reference external" href="http://www.cogpo.org/">Cognitive Paradigm Ontology</a> to clarify research purposes.</p>
-<ol class="arabic simple" start="5">
+<ol class="arabic simple" start="6">
 <li><p><strong>Validate the dataset</strong></p></li>
 </ol>
 <p><strong>BIDS Validator</strong> has been developed to easily check whether a dataset accurately follows the BIDS standard.
-Once the dataset is organized into BIDS format, the BIDS Validator can be used to check if any of the required or recommended metadata are missing.</p>
+Once the dataset is organized into BIDS format,
+the BIDS Validator can be used to check if any of the required or recommended metadata are missing.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>We recommend using the Web version with no need to install additional software which requires two steps:</p>
+<p>We recommend using the Web version of BIDS validator with no need to install additional software. To validate your data:
+* Open Google Chrome or Mozilla Firefox (the only supported browsers).</p>
 <ul class="simple">
-<li><p>Open Google Chrome or Mozilla Firefox (the only supported browsers).</p></li>
 <li><p>Go to <a class="reference external" href="https://bids-standard.github.io/bids-validator/">BIDS Validator</a> and select a folder with BIDS dataset.</p></li>
-<li><p>If the validator seems to be working longer than a couple of minutes, open developer tools and report the error in the <a class="reference external" href="https://github.com/bids-standard/bids-validator/issues">designated place</a>.</p></li>
+<li><p>If the validator seems to work longer than a couple of minutes, open developer tools and report the error in the <a class="reference external" href="https://github.com/bids-standard/bids-validator/issues">designated place</a>.</p></li>
 </ul>
 </div>
-<p>The validator works in the browser performs the validation on the client side (no data is uploaded or shared)
-so it is suitable for sensitive datasets that are not intended for public sharing.</p>
+<p>The BIDS validator performs the validation on the client side (no data is uploaded or shared)
+so it is suitable for sensitive datasets that are not intended to be publicly shared.</p>
 </div>
 </div>
 
@@ -240,6 +250,8 @@ so it is suitable for sensitive datasets that are not intended for public sharin
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="code.html" class="btn btn-neutral float-right" title="Code management" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="datalad.html" class="btn btn-neutral float-left" title="Data management" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
