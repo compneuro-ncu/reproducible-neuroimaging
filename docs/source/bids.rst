@@ -93,6 +93,7 @@ Once the dataset is organized into BIDS format,
 the BIDS Validator can be used to check if any of the required or recommended metadata are missing.
 
 .. note:: We recommend using the Web version of BIDS validator with no need to install additional software. To validate your data:
+    
     * Open Google Chrome or Mozilla Firefox (the only supported browsers).
 
     * Go to `BIDS Validator <https://bids-standard.github.io/bids-validator/>`_ and select a folder with BIDS dataset.
