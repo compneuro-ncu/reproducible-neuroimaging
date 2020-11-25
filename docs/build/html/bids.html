@@ -183,8 +183,11 @@ the raw data from accidental changes.</p>
 </ol>
 <a class="reference internal image-reference" href="_images/bidsyfing.png"><img alt="Alternative text" class="align-center" src="_images/bidsyfing.png" style="width: 205.60000000000002px; height: 47.6px;" /></a>
 <p>Data collected with an fMRI scanner are initially stored in DICOM format.
-In the first step, we have to convert our data from DICOM to NIfTI format.
-To do this, we can use <a class="reference external" href="https://github.com/rordenlab/dcm2niix">dcm2niix</a>, which is open-source software that runs on macOS, Linux, and Windows, typically without requiring any third-party dependencies.</p>
+In the first step, we have to convert our data from DICOM to NIfTI format.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>To perform such file conversion, we recommend using <a class="reference external" href="https://github.com/rordenlab/dcm2niix">dcm2niix format</a>, which is an open-source software that runs on macOS, Linux, and Windows, typically without requiring any third-party dependencies. At the bottom of the documentation available on GitHub, you can find other linked alternatives, e.g. <a class="reference external" href="https://github.com/nipy/heudiconv">HeuDiConv</a> which may facilitate the process of creating BIDS validate datasets and additionaly, this converter does integrate with DataLad by placing converted and original data under git/git-annex version control system.</p>
+</div>
 <ol class="arabic simple" start="2">
 <li><p><strong>Create folder structure</strong></p></li>
 </ol>

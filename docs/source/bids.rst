@@ -42,8 +42,9 @@ Here we summarize the steps necessary to create a BIDS-compatible dataset as des
 
 Data collected with an fMRI scanner are initially stored in DICOM format. 
 In the first step, we have to convert our data from DICOM to NIfTI format. 
-To do this, we can use `dcm2niix <https://github.com/rordenlab/dcm2niix>`_, which is open-source software that runs on macOS, Linux, and Windows, typically without requiring any third-party dependencies.
 
+.. seealso:: To perform such file conversion, we recommend using `dcm2niix format <https://github.com/rordenlab/dcm2niix>`_, which is an open-source software that runs on macOS, Linux, and Windows, typically without requiring any third-party dependencies. At the bottom of the documentation available on GitHub, you can find other linked alternatives, e.g. `HeuDiConv <https://github.com/nipy/heudiconv>`_ which may facilitate the process of creating BIDS validate datasets and additionaly, this converter does integrate with DataLad by placing converted and original data under git/git-annex version control system.
+ 
 2. **Create folder structure**
 
 BIDS relies on a particular folder structure and naming scheme of files. 
