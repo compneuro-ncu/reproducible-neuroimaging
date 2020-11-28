@@ -87,7 +87,12 @@
 <li class="toctree-l1"><a class="reference internal" href="data-sharing.html">Data sharing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datalad.html">Data management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bids.html">Data structure</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Code management</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Code management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#version-control-system">Version control system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#makefiles">Makefiles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#code-folder-structure">Code folder structure</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -155,6 +160,49 @@
             
   <div class="section" id="code-management">
 <h1>Code management<a class="headerlink" href="#code-management" title="Permalink to this headline">¶</a></h1>
+<p>Neuroimaging data analysis involves a code that allows interpretation and validation of the results as well as solving new research questions.
+That is why you should think about code in case of reproducibility either.
+Most researchers are not trained in software engineering which often causes undocumented code, but still sharing undocumented code is much better
+than not sharing at all. (Gorgolewski et al. 2016)</p>
+<p>Although, we aim to provide the most optimal scientific practices in which data science code quality is about correctness and reproducibility.
+Starting with a fairly standardized setup provides a clean, logical structure of the code.</p>
+<div class="section" id="version-control-system">
+<h2>Version control system<a class="headerlink" href="#version-control-system" title="Permalink to this headline">¶</a></h2>
+<p>Version control system (VSC) is a class of systems responsible for managing changes to any collections
+of information such as computer programs or documentation over time.</p>
+<p><a class="reference external" href="https://git-scm.com/">Git</a> is the most popular version control system which allows efficient source code management. There are its basic features:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>saving the history of changes</strong>, where each of them have a title, comment, contributor information and the date of change; it allows direct insight into the changes that have occurred in the source files;</p></li>
+<li><p><strong>code branching</strong> that is the ability to developing new program functions independently of each other; the main branch allows to have a stable version of the program, and the independent remaining branches allow to test new solutions; changes taking place in branches can be removed or implemented directly into the source;</p></li>
+<li><p><strong>Git remote repository</strong> allows to work on a project backup that forms the basis of teamwork; each contributor has a local version on their device, which can be linked to its remote version;</p></li>
+<li><p>the ability of <strong>offline working</strong> on personal device.</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/git.png"><img alt="Alternative text" class="align-center" src="_images/git.png" style="width: 128.0px; height: 53.5px;" /></a>
+<p>Git in conjunction with services such as <a class="reference external" href="https://github.com/">GitHub.com</a> allows the entire community of developers to engage in the development of shared software and help eliminate unnoticed errors. So what exactly is GitHub? Basically, it is a platform providing free hosting for open source programs and private repositories for sharing code.</p>
+<a class="reference internal image-reference" href="_images/github.png"><img alt="Alternative text" class="align-center" src="_images/github.png" style="width: 115.0px; height: 46.5px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Every developer (both professional and non-professional) should be able to work with version control systems!</p>
+</div>
+</div>
+<div class="section" id="makefiles">
+<h2>Makefiles<a class="headerlink" href="#makefiles" title="Permalink to this headline">¶</a></h2>
+<p>Automation with scripts improves processing when parameters are modified in the course of the project and time-consuming processing steps have to be repeated.</p>
+<p>The created program of neuroimaging data analysis will consist of several source files.
+If you want to show the program to other users, we have to create an elegant way to compile our program.
+<strong>Make</strong> enables you to express your workflow backwards as dependencies between files.</p>
+<p><strong>Makefiles</strong> are machine-readable documentation capturing your workflow in a machine-readable format with 100 % chances to pass the effectiveness tests.
+<strong>Make</strong> is a rigorous way of recording each step in the process, enabling you (and your coworkers) to reproduce the entire process later.</p>
+</div>
+<div class="section" id="code-folder-structure">
+<h2>Code folder structure<a class="headerlink" href="#code-folder-structure" title="Permalink to this headline">¶</a></h2>
+<p>Even written and organized code is of no reuse, unless others have access to proper documentation and information describing what and where something is
+actually stored in the repository. Clear folder structure and documentation within a repository are needed to make use of information.</p>
+<p>A form of self-documentation differs among each researcher and to simplify the whole process we managed to create our own code folder structure with
+proper description which may solve the problem.</p>
+</div>
 </div>
 
 
