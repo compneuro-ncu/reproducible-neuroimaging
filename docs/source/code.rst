@@ -64,3 +64,51 @@ actually stored in the repository. Clear folder structure and documentation with
 
 A form of self-documentation differs among each researcher and to simplify the whole process we managed to create our own code folder structure with
 proper description which may solve the problem. 
+
+│   .gitignore
+│   Dockerfile
+│   environment.yml
+│   LICENSE
+│   README.rst
+│
+├───analysis
+│   │   requirements.md
+│   │
+│   ├───01-behavioral
+│   │       README-behavioral.rst
+│   │
+│   ├───02-preprocessing
+│   │       fmriprep_command.sh
+│   │       README-preprocessing.rst
+│   │
+│   ├───03-modeling
+│   │       predict_model.py
+│   │       README-modeling.md
+│   │
+│   └───04-visualization
+│       │   visualize.py
+│       │
+│       └───figures
+│               Fig1-connectivity.png
+│
+├───data
+│   │   README-data_description.md
+│   │
+│   ├───01-raw
+│   ├───02-processed
+│   └───03-cleaned
+├───docs
+│   │   make.bat
+│   │   Makefile
+│   │
+│   └───source
+│           conf.py
+│           index.rst
+│
+├───notebooks
+│       jupyter.ipynb
+│
+└───utils
+        plotting.py
+
+If you are interested in using our template, visit our `GitHub page <https://github.com/compneuro-ncu/project-name-template>`_. 
