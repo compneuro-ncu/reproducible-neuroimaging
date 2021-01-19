@@ -36,7 +36,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Data structure" href="bids.html" /> 
+    <link rel="prev" title="Analysis worflows" href="analysis-workflows.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -85,10 +85,14 @@
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preregistration.html">Preregistration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-sharing.html">Data sharing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="datalad.html">Data management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bids.html">Data structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datalad.html">Data management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analysis-workflows.html">Analysis worflows</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Code management</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#version-control-system">Version control system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing-a-code">Testing a code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documenting-a-code">Documenting a code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#containers">Containers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#makefiles">Makefiles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#code-folder-structure">Code folder structure</a></li>
 </ul>
@@ -160,17 +164,19 @@
             
   <div class="section" id="code-management">
 <h1>Code management<a class="headerlink" href="#code-management" title="Permalink to this headline">¶</a></h1>
-<p>Neuroimaging data analysis involves a code that allows interpretation and validation of the results as well as solving new research questions.
-That is why you should think about code in case of reproducibility either.
-Most researchers are not trained in software engineering which often causes undocumented code, but still sharing undocumented code is much better
-than not sharing at all. (Gorgolewski et al. 2016)</p>
-<p>Although, we aim to provide the most optimal scientific practices in which data science code quality is about correctness and reproducibility.
+<p>Neuroimaging data analysis involves generation of a code that allows interpretation and validation of
+the scientific methods and results as well as solving new research questions.
+Most researchers are not trained in software engineering which often causes undocumented and disorganized code,
+however sharing an imperfect analysis code is still much better than not sharing at all. (Gorgolewski et al. 2016)</p>
+<p>Here, we aim to provide the most optimal scientific practices where data science code quality is
+focused on correctness and reproducibility.
 Starting with a fairly standardized setup provides a clean, logical structure of the code.</p>
 <div class="section" id="version-control-system">
 <h2>Version control system<a class="headerlink" href="#version-control-system" title="Permalink to this headline">¶</a></h2>
-<p>Version control system (VSC) is a class of systems responsible for managing changes to any collections
+<p><strong>Version control system</strong> (VSC) is a class of systems responsible for managing changes to any collections
 of information such as computer programs or documentation over time.</p>
-<p><a class="reference external" href="https://git-scm.com/">Git</a> is the most popular version control system which allows efficient source code management. There are its basic features:</p>
+<p><a class="reference external" href="https://git-scm.com/">Git</a> is the most popular version control system which allows efficient source code management.
+There are its basic features:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><strong>saving the history of changes</strong>, where each of them have a title, comment, contributor information and the date of change; it allows direct insight into the changes that have occurred in the source files;</p></li>
@@ -180,16 +186,37 @@ of information such as computer programs or documentation over time.</p>
 </ul>
 </div></blockquote>
 <a class="reference internal image-reference" href="_images/git.png"><img alt="Alternative text" class="align-center" src="_images/git.png" style="width: 128.0px; height: 53.5px;" /></a>
-<p>Git in conjunction with services such as <a class="reference external" href="https://github.com/">GitHub.com</a> allows the entire community of developers to engage in the development of shared software and help eliminate unnoticed errors. So what exactly is GitHub? Basically, it is a platform providing free hosting for open source programs and private repositories for sharing code.</p>
+<p>Git in conjunction with services such as <a class="reference external" href="https://github.com/">GitHub.com</a> allows the entire community of developers
+to engage in the development of shared software and help eliminate unnoticed errors.
+So what exactly is GitHub?
+Basically, it is a platform providing free hosting for open source programs and private repositories for sharing code.</p>
 <a class="reference internal image-reference" href="_images/github.png"><img alt="Alternative text" class="align-center" src="_images/github.png" style="width: 115.0px; height: 46.5px;" /></a>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Every developer (both professional and non-professional) should be able to work with version control systems!</p>
 </div>
+<p>There are multiple free tutorials for learning Git/GitHub. Here we share we of them:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://try.github.io/">Resources to learn Git</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=RGOj5yH7evk">Git and GitHub for Beginners - Crash Course (YouTube)</a></p></li>
+</ul>
+</div>
+<div class="section" id="testing-a-code">
+<h2>Testing a code<a class="headerlink" href="#testing-a-code" title="Permalink to this headline">¶</a></h2>
+<p>In progress.</p>
+</div>
+<div class="section" id="documenting-a-code">
+<h2>Documenting a code<a class="headerlink" href="#documenting-a-code" title="Permalink to this headline">¶</a></h2>
+<p>In progress.</p>
+</div>
+<div class="section" id="containers">
+<h2>Containers<a class="headerlink" href="#containers" title="Permalink to this headline">¶</a></h2>
+<p>In progress.</p>
 </div>
 <div class="section" id="makefiles">
 <h2>Makefiles<a class="headerlink" href="#makefiles" title="Permalink to this headline">¶</a></h2>
-<p>Automation with scripts improves processing when parameters are modified in the course of the project and time-consuming processing steps have to be repeated.</p>
+<p>Automation with scripts improves processing when parameters are modified in the course of the project
+and time-consuming processing steps have to be repeated.</p>
 <p>The created program of neuroimaging data analysis will consist of several source files.
 If you want to show the program to other users, we have to create an elegant way to compile our program.
 <strong>Make</strong> enables you to express your workflow backwards as dependencies between files.</p>
@@ -198,10 +225,58 @@ If you want to show the program to other users, we have to create an elegant way
 </div>
 <div class="section" id="code-folder-structure">
 <h2>Code folder structure<a class="headerlink" href="#code-folder-structure" title="Permalink to this headline">¶</a></h2>
-<p>Even written and organized code is of no reuse, unless others have access to proper documentation and information describing what and where something is
-actually stored in the repository. Clear folder structure and documentation within a repository are needed to make use of information.</p>
-<p>A form of self-documentation differs among each researcher and to simplify the whole process we managed to create our own code folder structure with
-proper description which may solve the problem.</p>
+<p>Your shared code can still be difficult to reuse,
+if others have difficulties to understand your repository structure.
+Clear folder structure and documentation within a repository are needed to make use of your code.</p>
+<p>We created <a class="reference external" href="https://github.com/compneuro-ncu/project-name-template">template project folder structure</a>
+with proper description which may help you to organize code from your own project. See the directories structure below.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>│   .gitignore
+│   Dockerfile
+│   environment.yml
+│   LICENSE
+│   README.rst
+│
+├───analysis
+│   │   requirements.md
+│   │
+│   ├───01-behavioral
+│   │       README-behavioral.rst
+│   │
+│   ├───02-preprocessing
+│   │       fmriprep_command.sh
+│   │       README-preprocessing.rst
+│   │
+│   ├───03-modeling
+│   │       predict_model.py
+│   │       README-modeling.md
+│   │
+│   └───04-visualization
+│       │   visualize.py
+│       │
+│       └───figures
+│               Fig1-connectivity.png
+│
+├───data
+│   │   README-data_description.md
+│   │
+│   ├───01-raw
+│   ├───02-processed
+│   └───03-cleaned
+├───docs
+│   │   make.bat
+│   │   Makefile
+│   │
+│   └───source
+│           conf.py
+│           index.rst
+│
+├───notebooks
+│       jupyter.ipynb
+│
+└───utils
+        plotting.py
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -214,7 +289,7 @@ proper description which may solve the problem.</p>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="bids.html" class="btn btn-neutral float-left" title="Data structure" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="analysis-workflows.html" class="btn btn-neutral float-left" title="Analysis worflows" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -224,7 +299,7 @@ proper description which may solve the problem.</p>
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Karolina Finc, Weronika Sójka
+        &copy; Copyright 2020, Computational Neuroimaging Team
 
     </p>
   </div>

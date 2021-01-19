@@ -20,7 +20,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'reproducible-neuroimaging'
-copyright = '2020, Karolina Finc, Weronika Sójka'
+copyright = '2020, Computational Neuroimaging Team'
 author = 'Karolina Finc, Weronika Sójka'
 
 # The short X.Y version

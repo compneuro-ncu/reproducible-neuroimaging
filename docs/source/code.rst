@@ -2,21 +2,23 @@
 Code management 
 ================
 
-Neuroimaging data analysis involves a code that allows interpretation and validation of the results as well as solving new research questions. 
-That is why you should think about code in case of reproducibility either. 
-Most researchers are not trained in software engineering which often causes undocumented code, but still sharing undocumented code is much better 
-than not sharing at all. (Gorgolewski et al. 2016) 
+Neuroimaging data analysis involves generation of a code that allows interpretation and validation of
+the scientific methods and results as well as solving new research questions.
+Most researchers are not trained in software engineering which often causes undocumented and disorganized code,
+however sharing an imperfect analysis code is still much better than not sharing at all. (Gorgolewski et al. 2016)
 
-Although, we aim to provide the most optimal scientific practices in which data science code quality is about correctness and reproducibility. 
+Here, we aim to provide the most optimal scientific practices where data science code quality is
+focused on correctness and reproducibility.
 Starting with a fairly standardized setup provides a clean, logical structure of the code.
 
 Version control system
 -----------------------
 
-Version control system (VSC) is a class of systems responsible for managing changes to any collections 
+**Version control system** (VSC) is a class of systems responsible for managing changes to any collections
 of information such as computer programs or documentation over time. 
 
-`Git <https://git-scm.com/>`_ is the most popular version control system which allows efficient source code management. There are its basic features:
+`Git <https://git-scm.com/>`_ is the most popular version control system which allows efficient source code management.
+There are its basic features:
 
   * **saving the history of changes**, where each of them have a title, comment, contributor information and the date of change; it allows direct insight into the changes that have occurred in the source files; 
 
@@ -33,7 +35,10 @@ of information such as computer programs or documentation over time.
   :align: center
   :alt: Alternative text
 
-Git in conjunction with services such as `GitHub.com <https://github.com/>`_ allows the entire community of developers to engage in the development of shared software and help eliminate unnoticed errors. So what exactly is GitHub? Basically, it is a platform providing free hosting for open source programs and private repositories for sharing code. 
+Git in conjunction with services such as `GitHub.com <https://github.com/>`_ allows the entire community of developers
+to engage in the development of shared software and help eliminate unnoticed errors.
+So what exactly is GitHub?
+Basically, it is a platform providing free hosting for open source programs and private repositories for sharing code.
 
 .. image:: img/github.png
   :height: 465
@@ -44,10 +49,29 @@ Git in conjunction with services such as `GitHub.com <https://github.com/>`_ all
 
 .. note:: Every developer (both professional and non-professional) should be able to work with version control systems!
 
+There are multiple free tutorials for learning Git/GitHub. Here we share we of them:
+
+* `Resources to learn Git <https://try.github.io/>`_
+
+* `Git and GitHub for Beginners - Crash Course (YouTube) <https://www.youtube.com/watch?v=RGOj5yH7evk>`_
+
+Testing a code
+------------------
+In progress.
+
+Documenting a code
+---------------------
+In progress.
+
+Containers
+----------
+In progress.
+
 Makefiles
 -----------
 
-Automation with scripts improves processing when parameters are modified in the course of the project and time-consuming processing steps have to be repeated.
+Automation with scripts improves processing when parameters are modified in the course of the project
+and time-consuming processing steps have to be repeated.
 
 The created program of neuroimaging data analysis will consist of several source files. 
 If you want to show the program to other users, we have to create an elegant way to compile our program. 
@@ -59,56 +83,56 @@ If you want to show the program to other users, we have to create an elegant way
 Code folder structure
 ----------------------
 
-Even written and organized code is of no reuse, unless others have access to proper documentation and information describing what and where something is 
-actually stored in the repository. Clear folder structure and documentation within a repository are needed to make use of information. 
+Your shared code can still be difficult to reuse,
+if others have difficulties to understand your repository structure.
+Clear folder structure and documentation within a repository are needed to make use of your code.
 
-A form of self-documentation differs among each researcher and to simplify the whole process we managed to create our own code folder structure with
-proper description which may solve the problem. 
+We created `template project folder structure <https://github.com/compneuro-ncu/project-name-template>`_
+with proper description which may help you to organize code from your own project. See the directories structure below.::
 
-│   .gitignore
-│   Dockerfile
-│   environment.yml
-│   LICENSE
-│   README.rst
-│
-├───analysis
-│   │   requirements.md
-│   │
-│   ├───01-behavioral
-│   │       README-behavioral.rst
-│   │
-│   ├───02-preprocessing
-│   │       fmriprep_command.sh
-│   │       README-preprocessing.rst
-│   │
-│   ├───03-modeling
-│   │       predict_model.py
-│   │       README-modeling.md
-│   │
-│   └───04-visualization
-│       │   visualize.py
-│       │
-│       └───figures
-│               Fig1-connectivity.png
-│
-├───data
-│   │   README-data_description.md
-│   │
-│   ├───01-raw
-│   ├───02-processed
-│   └───03-cleaned
-├───docs
-│   │   make.bat
-│   │   Makefile
-│   │
-│   └───source
-│           conf.py
-│           index.rst
-│
-├───notebooks
-│       jupyter.ipynb
-│
-└───utils
-        plotting.py
+    │   .gitignore
+    │   Dockerfile
+    │   environment.yml
+    │   LICENSE
+    │   README.rst
+    │
+    ├───analysis
+    │   │   requirements.md
+    │   │
+    │   ├───01-behavioral
+    │   │       README-behavioral.rst
+    │   │
+    │   ├───02-preprocessing
+    │   │       fmriprep_command.sh
+    │   │       README-preprocessing.rst
+    │   │
+    │   ├───03-modeling
+    │   │       predict_model.py
+    │   │       README-modeling.md
+    │   │
+    │   └───04-visualization
+    │       │   visualize.py
+    │       │
+    │       └───figures
+    │               Fig1-connectivity.png
+    │
+    ├───data
+    │   │   README-data_description.md
+    │   │
+    │   ├───01-raw
+    │   ├───02-processed
+    │   └───03-cleaned
+    ├───docs
+    │   │   make.bat
+    │   │   Makefile
+    │   │
+    │   └───source
+    │           conf.py
+    │           index.rst
+    │
+    ├───notebooks
+    │       jupyter.ipynb
+    │
+    └───utils
+            plotting.py
 
-If you are interested in using our template, visit our `GitHub page <https://github.com/compneuro-ncu/project-name-template>`_. 
