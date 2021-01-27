@@ -15,4 +15,4 @@ We built this guide based on subjectively selected resources and experiences of 
 thus, not all of our recommendations might be suitable for all labs. 
 Let us know if you find that we missed something essential, or we can improve our workflow!
 
-See documentation: <link to readthedocs>
+See documentation: `Guide to Reproducible Neuroimaging Research <https://reproducible-neuroimaging.readthedocs.io/en/latest/>`_
