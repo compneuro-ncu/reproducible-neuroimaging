@@ -63,15 +63,8 @@ Here, we aim to provide the most optimal scientific practices where data science
 
 <h1 align="center">Contributing</h1>
 
-Contributions of any kind welcome! There are many ways to get in touch with us! Please see our [Contact Page](http://compneuro.umk.pl/contact.html) if you want to contact with us. There is also a possibility to contact us by our social media (Twitter, ResearchGate, etc.). If you want to find us, you will!
+Contributions of any kind welcome! If there is any possibility that you think, you can improve this project - contribute with us! Report issues and create pull requests via GitHub. We are open to collaborate and create reliable source for reproducible neuroimaging. 
+
+There are many ways to get in touch with us! Please see our [Contact Page](http://compneuro.umk.pl/contact.html) if you want to contact with us. There is also a possibility to contact us by our social media (Twitter, ResearchGate, etc.). If you want to find us, you will!
 <br>
 
-
-<h1 align="center">Authors</h1>
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/kfinc"><img src="https://avatars1.githubusercontent.com/kfinc" width="100px;" alt=""/><br /><sub><b>Karolina Finc</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/wsojka00"><img src="https://avatars1.githubusercontent.com/wsojka00" width="100px;" alt=""/><br /><sub><b>Weronika Sójka</b></sub></a><br /></td>
-  </tr>
-</table>
