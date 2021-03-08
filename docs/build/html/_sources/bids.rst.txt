@@ -43,6 +43,9 @@ Here we summarize the steps necessary to create a BIDS-compatible dataset as des
 Data collected with an fMRI scanner are initially stored in DICOM format. 
 In the first step, we have to convert our data from DICOM to NIfTI format. 
 
+Developers created python toolkit BIDScoin that converts raw neuroimaging datasets to .nifti/.json /.tsv organised following the BIDS standard. 
+All information about installation and processing datasets can be found on `readthedosc.io <https://bidscoin.readthedocs.io/en/latest/installation.html>`_. Issues can be reported on GitHub repository.
+
 .. seealso:: To perform such file conversion, we recommend using `dcm2niix format <https://github.com/rordenlab/dcm2niix>`_, which is an open-source software that runs on macOS, Linux, and Windows, typically without requiring any third-party dependencies. At the bottom of the documentation available on GitHub, you can find other linked alternatives, e.g. `HeuDiConv <https://github.com/nipy/heudiconv>`_ which may facilitate the process of creating BIDS validate datasets and additionaly, this converter does integrate with DataLad by placing converted and original data under git/git-annex version control system.
  
 2. **Create folder structure**
