@@ -43,9 +43,6 @@ Here we summarize the steps necessary to create a BIDS-compatible dataset as des
 Data collected with an fMRI scanner are initially stored in DICOM format. 
 In the first step, we have to convert our data from DICOM to NIfTI format. 
 
-Developers created python toolkit BIDScoin that converts raw neuroimaging datasets to .nifti/.json /.tsv organised following the BIDS standard. 
-All information about installation and processing datasets can be found on `readthedosc.io <https://bidscoin.readthedocs.io/en/latest/installation.html>`_. Issues can be reported on GitHub repository.
-
 .. seealso:: To perform such file conversion, we recommend using `dcm2niix format <https://github.com/rordenlab/dcm2niix>`_, which is an open-source software that runs on macOS, Linux, and Windows, typically without requiring any third-party dependencies. At the bottom of the documentation available on GitHub, you can find other linked alternatives, e.g. `HeuDiConv <https://github.com/nipy/heudiconv>`_ which may facilitate the process of creating BIDS validate datasets and additionaly, this converter does integrate with DataLad by placing converted and original data under git/git-annex version control system.
  
 2. **Create folder structure**
@@ -106,3 +103,26 @@ the BIDS Validator can be used to check if any of the required or recommended me
 
 The BIDS validator performs the validation on the client side (no data is uploaded or shared) 
 so it is suitable for sensitive datasets that are not intended to be publicly shared. 
+
+Data format conversion
+-----------------------
+
+Developers created python toolkit **BIDScoin** that converts raw neuroimaging datasets to .nifti/.json /.tsv format, organised following the BIDS standard. 
+All information about installation and processing datasets can be found on `readthedosc.io <https://bidscoin.readthedocs.io/en/latest/installation.html>`_. Issues can be reported on GitHub repository.
+
+BIDScoin requires the data source to be organized according to a BIDS folder structure standard. However, data collected in folders can have various formats. 
+
+Having your data structurized, you can start converting data according to BIDS standard. It can be done through (1a) the ``bidsmapper``, (1b) the ``bidseditor``, (2) the ``bidscoiner``, command-line tools.
+The bidsmapper starts by making a map of the different kind of datatypes (scans) in your source dataset with so-called bidsmap, which tells how exactly to convert specific data format into a BIDS data.
+To check how the command-lines work, visit the `BIDScoin workflow <https://bidscoin.readthedocs.io/en/latest/workflow.html>`_.
+
+.. note:: After the successful run of BIDScoin there are couple more steps to take. Even though, there are only few of them and they require you to:
+
+    * Adding missing meta-data (i.e. refill ``dataset_description.json`` and ``README`` files) to fulfill your dataset.
+
+    * Examine data sharing utilities, such as multi-echo combination (echos separation) and defacing.
+
+    * Make sure that your dataset meet the requirements with BIDS Validator. 
+
+BIDScoin's documentation allow you to go through `the demonstration <https://bidscoin.readthedocs.io/en/latest/tutorial.html>`_ of using the tool, so do not hesitate to make sure that you are doing everything in a right way.
+

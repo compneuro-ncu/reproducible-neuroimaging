@@ -89,6 +89,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Data structure</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#brain-imaging-data-structure">Brain Imaging Data Structure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#create-a-bids-compatible-dataset">Create a BIDS compatible dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-format-conversion">Data format conversion</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="datalad.html">Data management</a></li>
@@ -185,8 +186,6 @@ the raw data from accidental changes.</p>
 <a class="reference internal image-reference" href="_images/bidsyfing.png"><img alt="Alternative text" class="align-center" src="_images/bidsyfing.png" style="width: 205.60000000000002px; height: 47.6px;" /></a>
 <p>Data collected with an fMRI scanner are initially stored in DICOM format.
 In the first step, we have to convert our data from DICOM to NIfTI format.</p>
-<p>Developers created python toolkit BIDScoin that converts raw neuroimaging datasets to .nifti/.json /.tsv organised following the BIDS standard.
-All information about installation and processing datasets can be found on <a class="reference external" href="https://bidscoin.readthedocs.io/en/latest/installation.html">readthedosc.io</a>. Issues can be reported on GitHub repository.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p>To perform such file conversion, we recommend using <a class="reference external" href="https://github.com/rordenlab/dcm2niix">dcm2niix format</a>, which is an open-source software that runs on macOS, Linux, and Windows, typically without requiring any third-party dependencies. At the bottom of the documentation available on GitHub, you can find other linked alternatives, e.g. <a class="reference external" href="https://github.com/nipy/heudiconv">HeuDiConv</a> which may facilitate the process of creating BIDS validate datasets and additionaly, this converter does integrate with DataLad by placing converted and original data under git/git-annex version control system.</p>
@@ -246,6 +245,25 @@ the BIDS Validator can be used to check if any of the required or recommended me
 </div>
 <p>The BIDS validator performs the validation on the client side (no data is uploaded or shared)
 so it is suitable for sensitive datasets that are not intended to be publicly shared.</p>
+</div>
+<div class="section" id="data-format-conversion">
+<h2>Data format conversion<a class="headerlink" href="#data-format-conversion" title="Permalink to this headline">¶</a></h2>
+<p>Developers created python toolkit <strong>BIDScoin</strong> that converts raw neuroimaging datasets to .nifti/.json /.tsv format, organised following the BIDS standard.
+All information about installation and processing datasets can be found on <a class="reference external" href="https://bidscoin.readthedocs.io/en/latest/installation.html">readthedosc.io</a>. Issues can be reported on GitHub repository.</p>
+<p>BIDScoin requires the data source to be organized according to a BIDS folder structure standard. However, data collected in folders can have various formats.</p>
+<p>Having your data structurized, you can start converting data according to BIDS standard. It can be done through (1a) the <code class="docutils literal notranslate"><span class="pre">bidsmapper</span></code>, (1b) the <code class="docutils literal notranslate"><span class="pre">bidseditor</span></code>, (2) the <code class="docutils literal notranslate"><span class="pre">bidscoiner</span></code>, command-line tools.
+The bidsmapper starts by making a map of the different kind of datatypes (scans) in your source dataset with so-called bidsmap, which tells how exactly to convert specific data format into a BIDS data.
+To check how the command-lines work, visit the <a class="reference external" href="https://bidscoin.readthedocs.io/en/latest/workflow.html">BIDScoin workflow</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After the successful run of BIDScoin there are couple more steps to take. Even though, there are only few of them and they require you to:</p>
+<ul class="simple">
+<li><p>Adding missing meta-data (i.e. refill <code class="docutils literal notranslate"><span class="pre">dataset_description.json</span></code> and <code class="docutils literal notranslate"><span class="pre">README</span></code> files) to fulfill your dataset.</p></li>
+<li><p>Examine data sharing utilities, such as multi-echo combination (echos separation) and defacing.</p></li>
+<li><p>Make sure that your dataset meet the requirements with BIDS Validator.</p></li>
+</ul>
+</div>
+<p>BIDScoin’s documentation allow you to go through <a class="reference external" href="https://bidscoin.readthedocs.io/en/latest/tutorial.html">the demonstration</a> of using the tool, so do not hesitate to make sure that you are doing everything in a right way.</p>
 </div>
 </div>
 
