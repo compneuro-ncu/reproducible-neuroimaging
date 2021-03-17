@@ -40,7 +40,7 @@ and building reproducible neuroimaging workflows.
    <div align="center">
 
 We built this guide based on subjectively selected resources and
-experiences of the Computational Neuroimaging Team at Nicolaus
+experiences of the `Computational Neuroimaging Team <compneuro.umk.pl>`_ at Nicolaus
 Copernicus University in Toruń; thus, not all of our recommendations
 might be suitable for all labs. Let us know if you find that we missed
 something essential, or we can improve our workflow!
