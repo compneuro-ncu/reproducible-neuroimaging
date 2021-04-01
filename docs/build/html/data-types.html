@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data management &mdash; reproducible-neuroimaging 0.0.1 documentation</title>
+  <title>Different data types &mdash; reproducible-neuroimaging 0.0.1 documentation</title>
   
 
   
@@ -35,9 +35,7 @@
 
     
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Analysis worflows" href="analysis-workflows.html" />
-    <link rel="prev" title="Data structure" href="bids.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,19 +80,14 @@
               
             
             
-              <ul class="current">
+              <ul>
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preregistration.html">Preregistration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-sharing.html">Data sharing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bids.html">Data structure</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Data management</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#basics">Basics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#data-storage">Data storage</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="datalad.html">Data management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analysis-workflows.html">Analysis worflows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="code.html">Code management</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-types.html">Different data types</a></li>
 </ul>
 
             
@@ -141,13 +134,13 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Data management</li>
+      <li>Different data types</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/datalad.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/data-types.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -160,25 +153,41 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="data-management">
-<h1>Data management<a class="headerlink" href="#data-management" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://www.datalad.org/">DataLad</a> is a software tool designed to help with anything related to the version control
-of of digital objects. Flexible storage options and means for retrieval and updating of data efficiently are crucial for
-data further usage.
-DataLad assists with storing and retrieving the data in a transparent and streamlined fashion,
-which aims to standardize data access and updates across hosting solutions.</p>
-<div class="section" id="basics">
-<h2>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h2>
-<p>DataLad enables you to improve access to data from various sources in the form of a distributed network
-by registering online sources or neuroscience data platforms (such as OpenNeuro) as useful metadata for files.
-Moreover, this tool separates the actual data retrieval of the file contents from the simplified metadata based
-representation of file names, allowing you to represent datasets of any scale at a fraction of their total size on
-disk while documenting and maintaining access to them.</p>
-<p>For full access to the contents of any dataset, use the command <code class="docutils literal notranslate"><span class="pre">%</span> <span class="pre">datalad</span> <span class="pre">get</span> <span class="pre">...</span></code> which is specified in <a class="reference external" href="http://docs.datalad.org/en/stable/generated/man/datalad-get.html">Command Line Reference</a> in the DataLad documentation.</p>
-<p>In order to share data sets, it can use the standard repository hosting infrastructure (GitHub, Bitbucket and others) as access points for data installation, without actually publishing the data content in these services, which allows it to have the height of the files.</p>
+  <div class="section" id="different-data-types">
+<h1>Different data types<a class="headerlink" href="#different-data-types" title="Permalink to this headline">¶</a></h1>
+<p>The number of neuroimaging tools is large, ranging from electroencephalography to optogenetics to functional magnetic resonance imaging.
+However, not all types of analyzes have generally available tools for the analysis and documentation of datasets.
+Nevertheless, the open-source community is still working on solutions that can solve this problem using the most popular
+and easy-to-use tools such as Python, BIDS and the like.</p>
+<p>In this section, we describe guidelines for documenting and analyzing data in an open and well-documented manner.</p>
+<div class="section" id="eeg-and-meg">
+<h2>EEG and MEG<a class="headerlink" href="#eeg-and-meg" title="Permalink to this headline">¶</a></h2>
+<p>BIDS community being the result of the ongoing collaboration, shared knowledge, discussion and consesus - is constantly
+working on the continuous development of new tools for data analysis.</p>
+<div class="section" id="eeg-bids">
+<h3>EEG-BIDS<a class="headerlink" href="#eeg-bids" title="Permalink to this headline">¶</a></h3>
+<p>In progress.</p>
 </div>
-<div class="section" id="data-storage">
-<h2>Data storage<a class="headerlink" href="#data-storage" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="meg-bids">
+<h3>MEG-BIDS<a class="headerlink" href="#meg-bids" title="Permalink to this headline">¶</a></h3>
+<p>In progress</p>
+</div>
+<div class="section" id="meg-eeg-analysis-visualization">
+<h3>MEG + EEG Analysis &amp; Visualization<a class="headerlink" href="#meg-eeg-analysis-visualization" title="Permalink to this headline">¶</a></h3>
+<p><strong>MNE-Python software</strong>  is an open-source Python package for exploring, visualizing, and analyzing human neurophysiological
+data such as MEG, EEG, sEEG, ECoG, and more.</p>
+<p>This Python package covers most types of data analysis workflow including preprocessing, visualization, source estimation, time-frequency analysis,
+connectivity analysis, machine learning, and statistics.
+All of those are covered and explained further in <a class="reference external" href="https://mne.tools/dev/auto_tutorials/index.html">Tutorials</a>.</p>
+<p>The installation is quite easy, because it works with <cite>pip install -U mne</cite>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To find more specific information, visit the <a class="reference external" href="https://mne.tools/dev/index.html">MNE’s documentation</a>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="fmri">
+<h2>fMRI<a class="headerlink" href="#fmri" title="Permalink to this headline">¶</a></h2>
 <p>In progress.</p>
 </div>
 </div>
@@ -188,15 +197,6 @@ disk while documenting and maintaining access to them.</p>
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="analysis-workflows.html" class="btn btn-neutral float-right" title="Analysis worflows" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="bids.html" class="btn btn-neutral float-left" title="Data structure" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

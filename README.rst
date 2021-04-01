@@ -55,7 +55,7 @@ something essential, or we can improve our workflow!
      <h3>
        
 
- `Click to view our Guide to Reproducible Neuroimaging Research <https://reproducible-neuroimaging.readthedocs.io/en/latest/>`_!
+ Check out our `Guide to Reproducible Neuroimaging Research <https://reproducible-neuroimaging.readthedocs.io>`_
 
 .. raw:: html
 

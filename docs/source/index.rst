@@ -18,3 +18,4 @@ Contents
    datalad
    analysis-workflows
    code
+   data-types
